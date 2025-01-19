@@ -1,0 +1,9 @@
+This is a complete list of options available in the windows/wlan/wlan_profile post exploitation module:
+
+msf6 post(windows/wlan/wlan_profile) > show options
+
+Module options (post/windows/wlan/wlan_profile):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SESSION                   yes       The session to run this module on.

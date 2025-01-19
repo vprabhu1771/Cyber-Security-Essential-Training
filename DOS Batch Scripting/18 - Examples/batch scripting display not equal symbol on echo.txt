@@ -1,0 +1,21 @@
+In batch scripting, the `!` character has a special meaning when delayed variable expansion is enabled. If you want to display the `!` symbol using the `echo` command, you might encounter issues due to the delayed expansion. To overcome this, you can disable delayed expansion using `setlocal enabledelayedexpansion` and `endlocal`:
+
+```batch
+@echo off
+setlocal enabledelayedexpansion
+
+echo This is an exclamation mark: ^!
+
+endlocal
+```
+
+In this example, the `^` character is used to escape the `!` symbol, and delayed expansion is enabled and disabled with `setlocal enabledelayedexpansion` and `endlocal`, respectively.
+
+Alternatively, you can use the `echo` command without escaping if you enclose the string in double quotes:
+
+```batch
+@echo off
+echo "This is an exclamation mark: ! This is some text."
+```
+
+In this case, the `!` symbol is treated as a literal character and will be displayed as part of the output.

@@ -1,0 +1,3 @@
+Shut down or restart the computer.
+
+SHUTDOWN /s /t 0

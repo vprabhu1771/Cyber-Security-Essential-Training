@@ -1,0 +1,50 @@
+To create a Meterpreter script that displays the operating system name using the `Msf::Module::Platform::Windows.realname` method, you can use the following example. This script will print the lowercase version of the realname to the console.
+
+```ruby
+# Save this script with a .rc extension, e.g., display_os.rc
+
+# Import the necessary modules
+require 'msf/core'
+
+class MetasploitModule < Msf::Post
+  include Msf::Post::Common
+
+  def initialize(info={})
+    super(update_info(info,
+      'Name'           => 'Display OS Name',
+      'Description'    => %q{
+        Display the operating system name using the realname method in Meterpreter.
+      },
+      'License'        => MSF_LICENSE,
+      'Author'         => ['Your Name'],
+      'Platform'       => ['win']
+    ))
+  end
+
+  def run
+    # Display the OS name
+    os_name = session.sys.config.sysinfo['OS']
+    print_good("Operating System: #{os_name}")
+  end
+end
+```
+
+Here's an explanation of the script:
+
+- The script is a Meterpreter post-exploitation module that extends the `Msf::Post` module.
+
+- It includes the necessary modules and defines a class named `MetasploitModule`.
+
+- The `initialize` method is called when an instance of the class is created. It sets up basic information about the module, such as name, description, license, author, and supported platforms.
+
+- The `run` method contains the actual code that will be executed when the module is run. It retrieves the operating system name from the Meterpreter session and prints it to the console using `print_good`.
+
+To use the script, save it with a .rc extension (e.g., `display_os.rc`) and run it using the `meterpreter` console in Metasploit:
+
+```
+use post/windows/manage/display_os
+set SESSION <session_number>
+run
+```
+
+Replace `<session_number>` with the appropriate session number. The script will display the operating system name in the console.

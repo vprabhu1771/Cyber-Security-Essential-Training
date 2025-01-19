@@ -1,0 +1,10 @@
+Use the upload command to upload a file from your local machine to the target machine.
+
+upload /path/to/local/file /path/to/remote/location
+
+
+Replace /path/to/local/file with the path of the file on your local machine that 
+you want to upload, and /path/to/remote/location with the desired location on the 
+target machine.
+
+Once the file transfer is complete, you can verify its presence on the target machine.

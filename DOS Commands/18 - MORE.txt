@@ -1,0 +1,3 @@
+Display the contents of a text file one screen at a time.
+
+MORE filename.txt

@@ -1,0 +1,17 @@
+In batch scripting, the `<` symbol is used for input redirection. If you want to display the `<` symbol using the `echo` command, you can do so by using the `^` character to escape it. Here's an example:
+
+```batch
+@echo off
+echo This is a less than symbol: ^< This is some text.
+```
+
+In this example, the `^` character is used to escape the `<` symbol, so it will be displayed as part of the output.
+
+Alternatively, you can also use the `echo` command without escaping if you enclose the string in double quotes:
+
+```batch
+@echo off
+echo "This is a less than symbol: < This is some text."
+```
+
+In this case, the `<` symbol is treated as a literal character and will be displayed as part of the output.

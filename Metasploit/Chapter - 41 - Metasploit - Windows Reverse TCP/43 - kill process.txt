@@ -1,0 +1,8 @@
+┌──(kali㉿kali)-[~]
+└─$ kill -9 2058             
+                                                                                                                                                                                                                                           
+[1]  + killed     msfconsole
+
+OR
+
+kill -9 `lsof -t -i:port`

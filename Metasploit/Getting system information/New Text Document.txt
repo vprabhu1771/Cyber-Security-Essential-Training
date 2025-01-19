@@ -1,0 +1,32 @@
+def getinfo(session)
+
+    begin
+       sysnfo = session.sys.config.sysinfo
+
+       runpriv = session.sys.config.getuid
+
+       print_status("Getting system information ...")
+
+       print_status("The target machine OS is #{sysnfo['OS']}")
+
+       print_status("The computer name is #{'Computer'} ")
+
+       print_status("Script running as #{runpriv}")
+
+    rescue ::Exception => e
+
+       print_error("The following error was encountered #{e}")
+
+    end
+
+end
+
+getinfo(client)
+
+
+
+meterpreter > run prabhu.rb                                                                                                                                                                                                                 
+[*] Getting system information ...                                                                                                                                                                                                          
+[*] The target machine OS is Windows 10 (10.0 Build 19045).                                                                                                                                                                                 
+[*] The computer name is Computer                                                                                                                                                                                                           
+[*] Script running as MAIN3\windows_rig3  

@@ -1,0 +1,3 @@
+Display the IP configuration for all network interfaces.
+
+IPCONFIG

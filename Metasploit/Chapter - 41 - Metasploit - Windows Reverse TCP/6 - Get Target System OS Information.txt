@@ -1,0 +1,9 @@
+sysinfo
+
+Computer        : DESKTOP-8NFK1VS
+OS              : Windows 10 (10.0 Build 18362).
+Architecture    : x64
+System Language : en_US
+Domain          : WORKGROUP
+Logged On Users : 2
+Meterpreter     : x86/windows

@@ -1,0 +1,9 @@
+The webcam_list command when run from the Meterpreter shell, will display currently available web cams on the target host.
+
+Example usage:
+
+meterpreter > webcam_list
+1: Creative WebCam NX Pro
+2: Creative WebCam NX Pro (VFW)
+
+meterpreter >

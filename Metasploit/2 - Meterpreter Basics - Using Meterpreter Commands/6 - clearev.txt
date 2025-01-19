@@ -1,0 +1,17 @@
+The clearev command will clear the Application, System, and Security logs on a Windows system. There are no options or arguments.
+
+Before using Meterpreter to clear the logs | Metasploit Unleashed
+
+Example usage: Before
+
+meterpreter > clearev
+
+[*] Wiping 97 records from Application...
+[*] Wiping 415 records from System...
+[*] Wiping 0 records from Security...
+
+meterpreter >
+
+After using Meterpreter to clear the logs | Metasploit Unleashed
+
+After

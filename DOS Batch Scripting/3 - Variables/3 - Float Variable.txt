@@ -1,0 +1,22 @@
+Float/Double: %myFloat% is a string variable representing a floating-point number.
+
+@echo off
+
+setlocal
+
+
+REM Float/Double (using string)
+
+set myFloat=3.14
+
+echo Float/Double: %myFloat%
+
+
+endlocal
+
+
+OUTPUT
+
+app.bat
+
+Float/Double: 3.14

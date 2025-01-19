@@ -1,0 +1,24 @@
+meterpreter > sqlite_query -h
+Usage: sqlite_query -d <database_file> -q <statement>
+
+
+OPTIONS:
+
+    -d   The sqlite database file
+    -h   Help Banner
+    -q   The sqlite statement to execute
+    -w   Open the database in writable mode (for INSERT/UPDATE statements)
+
+
+OR
+
+meterpreter > sqlite_query -q
+[-] You must enter both a database files and a query
+[-] e.g. sqlite_query -d /data/data/com.android.browser/databases/webviewCookiesChromium.db -q 'SELECT * from cookies'
+
+OPTIONS:
+
+    -d   The sqlite database file
+    -h   Help Banner
+    -q   The sqlite statement to execute
+    -w   Open the database in writable mode (for INSERT/UPDATE statements)

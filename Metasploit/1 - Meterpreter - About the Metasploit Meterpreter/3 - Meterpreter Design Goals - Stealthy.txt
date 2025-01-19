@@ -1,0 +1,7 @@
+Meterpreter resides entirely in memory and writes nothing to disk.
+
+No new processes are created as Meterpreter injects itself into the compromised process and can migrate to other running processes easily.
+
+By default, Meterpreter uses encrypted communications.
+
+All of these provide limited forensic evidence and impact on the victim machine.

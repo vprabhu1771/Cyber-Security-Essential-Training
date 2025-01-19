@@ -1,0 +1,23 @@
+def getinfo(session)
+   
+   print_status("Getting system information ...")
+
+   print_status("The target machine OS is #{session}")
+   
+   print_status("The target machine OS is #{session.sys}")
+          
+   print_status("The target machine OS is #{session.sys.config}")
+ 
+   print_status("The target machine OS is #{session.sys.config.sysinfo}")
+
+end
+
+getinfo(client)
+
+
+meterpreter > run prabhu.rb
+[*] Getting system information ...
+[*] The target machine OS is #<Msf::Sessions::Meterpreter_x86_Win:0x00007f88753fd748>
+[*] The target machine OS is #<Rex::Post::Meterpreter::ObjectAliases:0x00007f885f75bea0>
+[*] The target machine OS is #<Rex::Post::Meterpreter::Extensions::Stdapi::Sys::Config:0x00007f885f760388>
+[*] The target machine OS is {"Computer"=>"MAIN3", "OS"=>"Windows 10 (10.0 Build 19045).", "Architecture"=>"x64", "BuildTuple"=>nil, "System Language"=>"en_US", "Domain"=>"WORKGROUP", "Logged On Users"=>2}

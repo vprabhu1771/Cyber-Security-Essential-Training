@@ -1,0 +1,3 @@
+https://github.com/rapid7/metasploit-framework/blob/master/lib/rex/post/meterpreter/ui/console/command_dispatcher/stdapi/sys.rb#L1225
+
+https://www.rubydoc.info/github/rapid7/metasploit-framework/Rex/Post/Meterpreter/Ui/Console/CommandDispatcher/Stdapi/Sys#cmd_sysinfo-instance_method

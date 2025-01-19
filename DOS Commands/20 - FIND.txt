@@ -1,0 +1,3 @@
+Search for a text string in a file or files.
+
+FIND "text" filename.txt

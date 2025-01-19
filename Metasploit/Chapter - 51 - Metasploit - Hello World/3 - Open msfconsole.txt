@@ -1,0 +1,7 @@
+Now, you can load the custom module in Metasploit:
+
+msfconsole
+
+OR
+
+msfconsole -q

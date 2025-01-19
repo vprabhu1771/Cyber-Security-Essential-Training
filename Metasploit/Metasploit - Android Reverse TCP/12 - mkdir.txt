@@ -1,0 +1,2 @@
+meterpreter > mkdir songs
+Creating directory: songs

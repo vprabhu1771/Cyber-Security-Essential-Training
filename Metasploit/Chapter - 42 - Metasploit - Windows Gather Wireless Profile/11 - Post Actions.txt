@@ -1,0 +1,8 @@
+This is a list of all post exploitation actions which the windows/wlan/wlan_profile module can do:
+
+msf6 post(windows/wlan/wlan_profile) > show actions
+
+Post actions:
+
+   Name  Description
+   ----  -----------

@@ -1,0 +1,3 @@
+The run command allows you to run a post module against the remote machine at the Meterpreter prompt. For example:
+
+meterpreter > run post/android/capture/screen 

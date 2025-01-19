@@ -1,0 +1,47 @@
+Perform mathematical Addition
+
+@echo off
+setlocal
+
+rem Set variables
+set "x=2"
+set "y=3"
+set "result="
+
+rem Display values of x and y
+echo x = %x%
+echo y = %y%
+echo.
+
+rem Perform addition and print the result directly
+rem Store the result in a variable and then print
+rem TYPE 1
+
+set /a "result=x+y"
+echo %x% + %y% = %result%
+echo.
+
+rem Perform addition and print the result directly
+rem Store the result in a variable and then print
+rem TYPE 2
+
+set /a result=x+y
+echo %x% + %y% = %result%
+echo.
+
+rem Pause to keep the command prompt open
+pause
+
+
+
+OUTPUT
+
+x = 2
+
+y = 3
+
+2 + 3 = 5
+
+2 + 3 = 5
+
+Press any key to continue . . .

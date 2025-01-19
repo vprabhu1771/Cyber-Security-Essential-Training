@@ -1,0 +1,3 @@
+Move one or more files from one directory to another.
+
+MOVE source destination

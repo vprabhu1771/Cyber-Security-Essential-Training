@@ -1,0 +1,10 @@
+┌──(kali㉿kali)-[~]
+└─$ lsof -i :4444   
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+ruby    2058 kali    7u  IPv4  28009      0t0  TCP kali:4444 (LISTEN)
+
+OR
+
+┌──(kali㉿kali)-[~]
+└─$ lsof -t -i :4444
+2058

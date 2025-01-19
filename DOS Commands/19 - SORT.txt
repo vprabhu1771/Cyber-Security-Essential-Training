@@ -1,0 +1,3 @@
+Sort the contents of a text file.
+
+SORT filename.txt

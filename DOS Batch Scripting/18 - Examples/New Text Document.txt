@@ -1,0 +1,9 @@
+@echo off
+echo Math+
+echo First num:
+set /P a=
+echo Second num:
+set /P b=
+set /a s=%a%+%b%
+echo Result: %s%
+pause

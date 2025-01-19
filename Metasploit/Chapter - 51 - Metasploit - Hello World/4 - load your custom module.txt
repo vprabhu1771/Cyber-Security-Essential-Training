@@ -1,0 +1,3 @@
+Once in the Metasploit console, load your custom module:
+
+use auxiliary/hello_world

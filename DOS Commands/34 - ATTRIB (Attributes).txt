@@ -1,0 +1,3 @@
+Display or change the attributes of a file or directory.
+
+ATTRIB [+R | -R] [+A | -A] [+S | -S] [+H | -H] filename

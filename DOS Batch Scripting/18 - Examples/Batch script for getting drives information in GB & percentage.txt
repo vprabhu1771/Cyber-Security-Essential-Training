@@ -1,0 +1,87 @@
+https://smarttechways.com/2018/11/16/batch-script-for-getting-drives-information-in-gb-percentage/
+
+Run instruction as following:
+
+1. Save this file as name diskinfo.bat
+
+2. Open the command prompt window
+
+3. Go to the location of script
+
+4. Run this as:
+diskinfo localhost
+
+5. Output as shown in snapshot:
+
+
+Script
+
+
+@ECHO OFF
+IF "%~1"=="" goto help
+
+@SETLOCAL ENABLEEXTENSIONS
+@SETLOCAL ENABLEDELAYEDEXPANSION
+
+@FOR /F "skip=1 tokens=1" %%x IN ('"WMIC /node:"%1" LOGICALDISK GET Name " ') DO (
+REM @ECHO %%x
+
+@FOR /F "tokens=1-3" %%n IN ('"WMIC /node:"%1" LOGICALDISK GET Name,Size,FreeSpace | find /i "%%x""') DO ( @SET FreeBytes=%%n & @SET TotalBytes=%%p
+
+SET TotalGB=0
+SET FreeGB=0
+
+REM Parameter value used to convert in GB
+set num1=1074
+
+REM Parameter value used to convert in MB or KB
+REM set num1 = 1049
+
+REM @ECHO Total space: !TotalBytes!
+
+SET /a TotalSpace=!TotalBytes:~0,-6! / !NUM1!
+SET /a FreeSpace=!FreeBytes:~0,-7! / !NUM1!
+
+SET TotalGB=!TotalSpace!
+SET FreeGB=!FreeSpace!
+
+SET PERNUM=100
+
+SET /A TotalUsed=!TotalSpace! - !FreeSpace!
+SET /A MULTIUSED=!TotalUsed!*!PERNUM!
+SET /A PERCENTUSED=!MULTIUSED!/!TotalGB!
+
+REM IF !TotalSpace! LSS 0 goto error
+
+@echo.
+@echo.
+@echo Drive: %%x
+@ECHO ===========================
+@ECHO Total space: !TotalGB! GB
+@ECHO Free space : !FreeGB! GB
+@ECHO PERCENTUSED : !PERCENTUSED!
+REM @SET TotalSpace=
+REM @SET FreeSpace=
+REM @SET TotalUsed=
+REM goto end
+)
+)
+goto end
+:error
+echo.
+echo *** Invalid server or drive specified ***
+echo.
+goto help
+
+:help
+echo.
+echo diskfree.cmd
+echo.
+echo Queries remote server for free disk space.
+echo Specify a MACHINENAME and a drive letter to be queried
+echo.
+echo Example: diskfree.cmd MACHINENAME c:
+echo.
+goto end
+
+:end

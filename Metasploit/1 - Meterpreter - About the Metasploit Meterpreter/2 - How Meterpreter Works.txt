@@ -1,0 +1,7 @@
+The target executes the initial stager. This is usually one of bind, reverse, findtag, passivex, etc.
+
+The stager loads the DLL prefixed with Reflective. The Reflective stub handles the loading/injection of the DLL.
+
+The Metepreter core initializes, establishes a TLS/1.0 link over the socket and sends a GET. Metasploit receives this GET and configures the client.
+
+Lastly, Meterpreter loads extensions. It will always load stdapi and will load priv if the module gives administrative rights. All of these extensions are loaded over TLS/1.0 using a TLV protocol.

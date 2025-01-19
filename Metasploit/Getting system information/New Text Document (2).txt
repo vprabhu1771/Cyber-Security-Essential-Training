@@ -1,0 +1,16 @@
+def getinfo(session)
+   
+   print_status("Getting system information ...")
+
+   print_status("The target machine OS is #{session.sys.config.sysinfo}")
+
+end
+
+getinfo(client)
+
+
+meterpreter > run prabhu.rb
+[*] Getting system information ...
+[*] The target machine OS is {"Computer"=>"MAIN3", "OS"=>"Windows 10 (10.0 Build 19045).", "Architecture"=>"x64", "BuildTuple"=>nil, "System Language"=>"en_US", "Domain"=>"WORKGROUP", "Logged On Users"=>2}
+
+meterpreter > 

@@ -1,0 +1,3 @@
+meterpreter > check_root
+
+[*] Device is not rooted

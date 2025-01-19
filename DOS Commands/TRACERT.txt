@@ -1,0 +1,3 @@
+Trace the route that packets take to reach a destination.
+
+TRACERT hostname_or_IP

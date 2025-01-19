@@ -1,0 +1,15 @@
+The ipconfig command displays the network interfaces and addresses on the remote machine.
+
+meterpreter > ipconfig
+
+MS TCP Loopback interface
+Hardware MAC: 00:00:00:00:00:00
+IP Address  : 127.0.0.1
+Netmask     : 255.0.0.0
+
+AMD PCNET Family PCI Ethernet Adapter - Packet Scheduler Miniport
+Hardware MAC: 00:0c:29:10:f5:15
+IP Address  : 192.168.1.104
+Netmask     : 255.255.0.0
+
+meterpreter >

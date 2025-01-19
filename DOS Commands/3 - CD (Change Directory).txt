@@ -1,0 +1,3 @@
+Change the current working directory.
+
+CD [directory_name]

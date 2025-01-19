@@ -1,0 +1,7 @@
+The background command will send the current Meterpreter session to the background and return you to the ‘msf’ prompt. To get back to your Meterpreter session, just interact with it again.
+
+meterpreter > background
+msf exploit(ms08_067_netapi) > sessions -i 1
+[*] Starting interaction with 1...
+
+meterpreter >

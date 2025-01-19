@@ -1,0 +1,3 @@
+Open a simple text editor for creating or editing text files.
+
+EDIT filename.txt

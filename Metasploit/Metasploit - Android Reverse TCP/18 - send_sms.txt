@@ -1,0 +1,5 @@
+The send_sms command allows you to send an SMS message. Keep in mind the phone will keep a copy of it, too.
+
+meterpreter > send_sms -d "2674554859" -t "hello"
+
+[+] SMS sent - Transmission successful

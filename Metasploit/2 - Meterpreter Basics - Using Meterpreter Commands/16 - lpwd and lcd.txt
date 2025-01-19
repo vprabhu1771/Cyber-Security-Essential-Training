@@ -1,0 +1,24 @@
+The lpwd and lcd commands are used to display and change the local working directory respectively. When receiving a Meterpreter shell, the local working directory is the location where one started the Metasploit console. Changing the working directory will give your Meterpreter session access to files located in this folder.
+
+ARGUMENTS:
+
+lpwd:		None required
+lcd:		Destination folder
+
+
+Example usage:
+
+meterpreter > lpwd
+/root
+
+meterpreter > lcd MSFU
+
+meterpreter > lpwd
+/root/MSFU
+
+meterpreter > lcd /var/www
+
+meterpreter > lpwd
+/var/www
+
+meterpreter >

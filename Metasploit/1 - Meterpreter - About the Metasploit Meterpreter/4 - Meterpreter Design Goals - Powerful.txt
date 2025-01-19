@@ -1,0 +1,3 @@
+Meterpreter utilizes a channelized communication system.
+
+The TLV protocol has few limitations.

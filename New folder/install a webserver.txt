@@ -1,0 +1,25 @@
+https://www.youtube.com/watch?v=e7ux3Kilxio
+
+sudo apt update
+
+sudo apt install apache2
+
+systemctl status apache2.service
+
+sudo apt install lynx
+
+lynx localhost
+
+cd /var/www/html/
+
+ls
+
+sudo mv index.html index.html.bk
+
+sudo vim index.html
+
+this is our new website
+
+sudo systemctl restart apache2.service
+
+lynx localhost

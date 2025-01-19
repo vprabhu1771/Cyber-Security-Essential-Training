@@ -1,0 +1,9 @@
+The geolocate commands allows you to locate the phone by retrieving the current lat-long using geolocation.
+
+meterpreter > geolocate
+
+[*] Current Location:
+        Latitude:  11.7508381
+        Longitude: 79.749323
+
+To get the address: https://maps.googleapis.com/maps/api/geocode/json?latlng=11.7508381,79.749323&sensor=true

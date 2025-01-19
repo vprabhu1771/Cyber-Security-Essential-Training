@@ -1,0 +1,3 @@
+The search command allows you to find files on the remote target. For example:
+
+meterpreter > search -d . -f *.txt

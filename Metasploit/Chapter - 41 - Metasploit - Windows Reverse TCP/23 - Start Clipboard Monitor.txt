@@ -1,0 +1,3 @@
+clipboard_monitor_start
+
+[+] Clipboard monitor started

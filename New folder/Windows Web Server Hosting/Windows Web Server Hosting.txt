@@ -1,0 +1,7 @@
+START -> CONTROL PANEL -> PROGRAMS AND FEATURES -> TURN WINDOWS FEATURES ON OR OFF
+
+Enable Internet Information Services
+
+Enable Internet Information Services Hostable Web Core 
+
+Click OK

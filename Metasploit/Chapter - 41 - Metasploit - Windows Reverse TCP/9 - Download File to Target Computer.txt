@@ -1,0 +1,8 @@
+Use the download command to download a file from the target machine to your local machine.
+
+download /path/to/remote/file /path/to/local/location
+
+Replace /path/to/remote/file with the path of the file on the target machine that you want 
+to download, and /path/to/local/location with the desired location on your local machine.
+
+Once the file download is complete, you can access it on your local machine.

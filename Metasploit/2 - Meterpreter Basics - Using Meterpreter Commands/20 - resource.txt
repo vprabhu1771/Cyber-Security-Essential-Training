@@ -1,0 +1,49 @@
+The resource command will execute Meterpreter instructions located inside a text file. Containing one entry per line, resource will execute each line in sequence. This can help automate repetitive actions performed by a user.
+
+By default, the commands will run in the current working directory (on target machine) and resource file in the local working directory (the attacking machine).
+
+
+meterpreter > resource
+Usage: resource path1 path2Run the commands stored in the supplied files.
+
+meterpreter >
+
+
+ARGUMENTS:
+
+path1:		The location of the file containing the commands to run.
+
+Path2Run:	The location where to run the commands found inside the file
+
+
+Example usage Our file used by resource:
+
+root@kali:~# cat resource.txt
+ls
+background
+
+root@kali:~#
+
+
+Running resource command:
+
+meterpreter> > resource resource.txt
+[*] Reading /root/resource.txt
+[*] Running ls
+
+Listing: C:\Documents and Settings\Administrator\Desktop
+========================================================
+
+Mode              Size    Type  Last modified              Name
+----              ----    ----  -------------              ----
+40777/rwxrwxrwx   0       dir   2012-02-29 16:41:29 -0500  .
+40777/rwxrwxrwx   0       dir   2012-02-02 12:24:40 -0500  ..
+100666/rw-rw-rw-  606     fil   2012-02-15 17:37:48 -0500  IDA Pro Free.lnk
+100777/rwxrwxrwx  681984  fil   2012-02-02 15:09:18 -0500  Sc303.exe
+100666/rw-rw-rw-  608     fil   2012-02-28 19:18:34 -0500  Shortcut to Ability Server.lnk
+100666/rw-rw-rw-  522     fil   2012-02-02 12:33:38 -0500  XAMPP Control Panel.lnk
+
+[*] Running background
+
+[*] Backgrounding session 1...
+msf  exploit(handler) >

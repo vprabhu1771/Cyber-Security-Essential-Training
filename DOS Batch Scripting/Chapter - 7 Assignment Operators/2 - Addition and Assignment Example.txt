@@ -1,0 +1,24 @@
+Perform mathematical Addition and result Assignment on same 
+variable
+
+@echo off
+setlocal enabledelayedexpansion
+
+rem Set initial value of x
+set x=10
+
+rem Increase x by 2
+set /a x+=2
+
+rem Display the value of x
+echo x value is !x!
+
+rem Wait for user input
+pause
+
+
+OUTPUT
+
+x value is 12
+
+Press any key to continue . . .

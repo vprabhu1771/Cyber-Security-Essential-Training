@@ -1,0 +1,20 @@
+The ifconfig command displays the network interfaces on the remote machine.
+
+meterpreter > ifconfig
+
+...
+
+Interface 10
+============
+Name         : wlan0 - wlan0
+Hardware MAC : 60:f1:89:07:c2:7e
+IPv4 Address : 192.168.1.207
+IPv4 Netmask : 255.255.255.0
+IPv6 Address : 2602:30a:2c51:e660:62f1:89ff:fe07:c27e
+IPv6 Netmask : ::
+IPv6 Address : fe80::62f1:89ff:fe07:c27e
+IPv6 Netmask : ::
+IPv6 Address : 2602:30a:2c51:e660:81ae:6bbd:e0e1:5954
+IPv6 Netmask : ::
+
+...

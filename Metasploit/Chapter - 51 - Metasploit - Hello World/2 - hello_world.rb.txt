@@ -1,0 +1,22 @@
+# hello_world.rb
+require 'msf/core'
+
+class MetasploitModule < Msf::Auxiliary
+  include Msf::Exploit::Remote::Tcp
+
+  def initialize
+    super(
+      'Name'        => 'Hello World Module',
+      'Description' => 'Prints Hello, World!',
+      'Author'      => 'Your Name',
+      'License'     => MSF_LICENSE
+    )
+  end
+
+  def run
+    print_good('Hello, World!')
+  end
+end
+
+
+Save the file in the `~/.msf4/modules/auxiliary/` directory.

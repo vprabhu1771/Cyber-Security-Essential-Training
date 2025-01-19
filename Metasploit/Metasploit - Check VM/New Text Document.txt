@@ -1,0 +1,4 @@
+meterpreter > run post/windows/gather/checkvm
+
+[*] Checking if the target is a Virtual Machine ...
+[+] This is a Hyper-V Virtual Machine

@@ -1,0 +1,30 @@
+Here is how the windows/wlan/wlan_profile post exploitation module looks in the msfconsole:
+
+
+msf6 > use post/windows/wlan/wlan_profile
+
+msf6 post(windows/wlan/wlan_profile) > show info
+
+       Name: Windows Gather Wireless Profile
+     Module: post/windows/wlan/wlan_profile
+   Platform: Windows
+       Arch: 
+       Rank: Normal
+
+Provided by:
+  theLightCosine <theLightCosine@metasploit.com>
+
+Compatible session types:
+  Meterpreter
+
+Basic options:
+  Name     Current Setting  Required  Description
+  ----     ---------------  --------  -----------
+  SESSION                   yes       The session to run this module on.
+
+Description:
+  This module extracts saved Wireless LAN profiles. It will also try 
+  to decrypt the network key material. Behavior is slightly different 
+  between OS versions when it comes to WPA. In Windows Vista/7 we will 
+  get the passphrase. In Windows XP we will get the PBKDF2 derived 
+  key.

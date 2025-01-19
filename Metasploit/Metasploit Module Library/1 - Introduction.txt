@@ -1,0 +1,15 @@
+There are the following 7 different module types in Metasploit:
+
+Exploits - Modules for exploiting a vulnerability and delivering a payload. There are remote exploits, local exploits, privilege escalation exploits, client-side exploits, web application exploits and many others.
+
+Payloads - Modules for performing an action during the exploitation, e.g. establishing meterpreter session, reverse shell, executing a command, downloading and executing a program etc. Payloads can be staged and non-staged.
+
+Post - Modules for post exploitation action such as credential / hash dumping, local privilege escalation, backdoor installation, sensitive data extraction, network traffic tunneling (proxying), keylogging, screen capturing and many other actions.
+
+Auxiliary - Modules for auxiliary actions such as network scanning, enumeration, vulnerability scanning, login brute force and cracking, fuzzing, spidering (traversal), data extraction and many others.
+
+Encoders - Modules for payload encoding and encryption such as base64, XOR, shikata_ga_nai etc. This can help with obfuscation to evade defenses such as Antivirus or NIDS (network intrusion detection systems), EDR (endpoint detection and response) etc.
+
+Evasions - Modules for evading defenses such as Antivirus evasion, AppLocker bypass, software restriction policies (SRP) bypass etc.
+
+Nops - Modules for generating a harmless, benign "No Operation" instructions, e.g. for padding purposes, sliding in memory during exploitation etc.

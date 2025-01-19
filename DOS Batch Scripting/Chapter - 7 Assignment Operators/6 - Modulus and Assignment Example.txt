@@ -1,0 +1,23 @@
+Perform mathematical Modulus or Remainder of division and result Assignment on same variable
+
+@echo off
+setlocal enabledelayedexpansion
+
+rem Set initial value of x
+set x=7
+
+rem Perform modulo operation on x by 3
+set /a x%%=3
+
+rem Display the value of x
+echo x value is !x!
+
+rem Wait for user input
+pause
+
+
+OUTPUT
+
+x value is 1
+
+Press any key to continue . . .

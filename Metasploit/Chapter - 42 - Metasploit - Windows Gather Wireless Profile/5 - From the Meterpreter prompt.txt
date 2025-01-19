@@ -1,0 +1,5 @@
+The first is by using the "run" command at the Meterpreter prompt. 
+
+It allows you to run the post module against that specific session:
+
+meterpreter > run post/windows/wlan/wlan_profile

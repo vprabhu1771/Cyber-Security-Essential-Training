@@ -1,0 +1,19 @@
+sudo mousepad
+
+
+File -> New 
+
+
+print_status("Hello World")
+
+
+
+File -> Save
+/usr/share/metasploit-framework/scripts/meterpreter/prabhu.rb
+
+
+
+Run Scripts
+
+meterpreter > run prabhu.rb
+[*] Hello World

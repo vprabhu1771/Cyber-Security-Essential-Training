@@ -1,0 +1,3 @@
+Display the structure of a directory or path as a tree diagram.
+
+TREE

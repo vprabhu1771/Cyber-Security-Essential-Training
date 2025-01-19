@@ -1,0 +1,11 @@
+Similar to the first method this method requires you to be connected to the wifi in order for it to work. This method works for both android and PCs.
+
+Step 1: Find Your gateway. If you select wifi settings then you can see the currently connected wifi settings as shown in the image below:
+
+Step 2: Type the gateway address in your android browser and you will reach the router admin page as shown below;
+
+Step 3: Now type the username and password for your router. For most devices, it’s the admin username and admin password. You need to google your wifi model number to find the default router password for your wifi.
+
+Step 4: Once you log in, Go to wifi settings and check the wifi password. You can easily recover the password from here.
+
+Step 5: What if you have set a password to the router but now forgotten it. Well, then you need to reset your router in order to access your router settings. If you can simply reset the router by pressing the router reset button and set up the router with a new password. That way you can get back your wifi access without needing the old password.

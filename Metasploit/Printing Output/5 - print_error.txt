@@ -1,0 +1,5 @@
+print_error("Hello World")
+
+
+meterpreter > run prabhu.rb
+[-] Hello World

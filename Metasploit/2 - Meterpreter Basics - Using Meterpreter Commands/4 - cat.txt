@@ -1,0 +1,10 @@
+The cat command is identical to the command found on *nix systems. It displays the content of a file when it’s given as an argument.
+
+meterpreter > cat
+Usage: cat file
+
+Example usage:
+meterpreter > cat edit.txt
+What you talkin' about Willis
+
+meterpreter >

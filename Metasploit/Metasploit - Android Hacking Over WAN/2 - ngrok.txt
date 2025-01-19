@@ -1,0 +1,29 @@
+Unzip the downloaded file and move it to a directory in your PATH. Below is an example for /usr/local/bin:
+
+sudo tar xvzf ./ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
+
+sudo cp ngrok /usr/bin/
+
+
+ngrok config add-authtoken 2Xn4QyxXE4i2963WnQL7ttfqd7K_3yR6FL4mnxhEYvNP3ETJ1
+Authtoken saved to configuration file: /home/kali/.config/ngrok/ngrok.yml
+
+
+Read the documentation on how to use ngrok. Try it out by running it from the command line:
+
+ngrok help
+
+
+Fire it up
+
+To start a HTTP tunnel forwarding to your local port 80, run this next:
+
+ngrok http 80
+
+or
+
+ngrok http 8080
+
+or 
+
+ngrok tcp 4242

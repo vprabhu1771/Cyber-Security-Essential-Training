@@ -1,0 +1,30 @@
+This is a slightly technical method but works really well as long as you follow the steps. You need a PC for this method to work. This method can extract any wifi password as long as your phone has connected to the wifi at least once. You do not need an active wifi connection to the wifi network.
+
+Step 1: Enable developer access by going to phone settings and tapping the build number 5-7 times until a message pops up saying, “You are now a developer”.
+
+
+Step 2: Now go to android developer settings and Enable USB debugging option as shown in the image below:
+
+
+Step 3: Now you need to install minimal ADB drivers on your system. Use the link below to download the ADB Drivers.
+
+
+Step 4: Once you have successfully installed the drivers open the app via the desktop shortcut
+
+
+Step 5: Connect your device to the system with a USB cable and Test the ADB connection. If you are connecting for the first time then you will get a popup asking for access on your mobile device. Click on allow.
+
+
+Step 6: In the command prompt window, type adb services, and then press enter. If it’s working properly, you should see a device on this list as shown in the image below:
+
+
+Step 7: Now to find the wifi password on your android device you need to access the wpa_supplicant file. To access the file type the following command:
+
+adb pull /data/misc/wifi/wpa_supplicant.conf c:/wpa_supplicant.conf.
+
+This command will copy the saved wifi passwords from your android device to the local disc C: drive of the system.
+
+
+Step 8: Now use a text editor and open the passwords file. You can see all the passwords below:
+
+You have now learned how to recover wifi passwords on your android device without root.

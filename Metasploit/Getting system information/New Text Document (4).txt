@@ -1,0 +1,26 @@
+https://docs.metasploit.com/api/Rex/Post/Meterpreter/Extensions/Stdapi/Net/Socket.html
+
+
+def getinfo(session)
+   
+   print_status("Getting system IP information ...")
+
+   print_status("The local machine IP #{session.sock.localhost}")   
+
+   print_status("The local machine Port #{session.sock.localport}")
+
+   print_status("The target machine IP #{session.sock.peerhost}")   
+   
+   print_status("The target machine Port #{session.sock.peerport}")
+
+end
+
+getinfo(client)
+
+meterpreter > run prabhu.rb
+[*] Getting system IP information ...
+[*] The local machine IP 192.168.1.112
+[*] The local machine Port 4444
+[*] The target machine IP 192.168.1.73
+[*] The target machine Port 54076
+meterpreter > 

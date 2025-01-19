@@ -1,0 +1,3 @@
+Set environment variables.
+
+SET variable=value

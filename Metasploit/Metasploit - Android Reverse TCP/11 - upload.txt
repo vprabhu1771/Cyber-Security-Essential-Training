@@ -1,0 +1,7 @@
+The upload command allows you to upload a file to the remote target. The -r option allows you to do so recursively.
+
+meterpreter > upload /home/kali/Downloads/image.jpg
+
+[*] Uploading  : /home/kali/Downloads/image.jpg -> image.jpg
+[*] Uploaded -1.00 B of 266.21 KiB (-0.0%): /home/kali/Downloads/image.jpg -> image.jpg
+[*] Completed  : /home/kali/Downloads/image.jpg -> image.jpg

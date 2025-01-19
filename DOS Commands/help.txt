@@ -1,0 +1,5 @@
+These are just a few examples of the many DOS commands available. Each command has various options and parameters that you can explore using the command's help feature. For example:
+
+command_name /?
+
+This will display the command's help documentation with information about its usage and available options.

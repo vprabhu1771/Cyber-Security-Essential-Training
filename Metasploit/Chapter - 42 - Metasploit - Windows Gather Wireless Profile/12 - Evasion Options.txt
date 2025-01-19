@@ -1,0 +1,8 @@
+Here is the full list of possible evasion options supported by the windows/wlan/wlan_profile post exploitation module in order to evade defenses (e.g. Antivirus, EDR, Firewall, NIDS etc.):
+
+msf6 post(windows/wlan/wlan_profile) > show evasion
+
+Module evasion options:
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------

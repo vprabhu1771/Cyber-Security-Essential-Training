@@ -1,0 +1,5 @@
+The get_local_subnets script is used to get the local subnet mask of a victim. This can be very useful information to have for pivoting.
+
+meterpreter > run get_local_subnets
+
+Local subnet: 10.211.55.0/255.255.255.0

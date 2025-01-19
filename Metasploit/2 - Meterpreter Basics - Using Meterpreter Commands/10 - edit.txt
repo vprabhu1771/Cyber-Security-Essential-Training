@@ -1,0 +1,20 @@
+The edit command opens a file located on the target host. It uses the ‘vim’ so all the editor’s commands are available.
+
+Example usage:
+
+meterpreter > ls
+
+Listing: C:\Documents and Settings\Administrator\Desktop
+========================================================
+
+Mode              Size    Type  Last modified              Name
+----              ----    ----  -------------              ----
+.
+...snip...
+.
+100666/rw-rw-rw-  0       fil   2012-03-01 13:47:10 -0500  edit.txt
+
+meterpreter > edit edit.txt
+
+
+Please refer to the vim editor documentation for more advance use. http://www.vim.org/

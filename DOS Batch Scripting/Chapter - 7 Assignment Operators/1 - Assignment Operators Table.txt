@@ -1,0 +1,7 @@
+No	Assignment Operators	Meaning
+1	+=	Addition and Assignment
+2	-=	Subtraction and Assignment
+3	*=	Multiplication and 
+Assignment
+4	/ =	Division and Assignment
+5	% =	Modulus and Assignment

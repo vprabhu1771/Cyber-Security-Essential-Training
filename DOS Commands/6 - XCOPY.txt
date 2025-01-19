@@ -1,0 +1,3 @@
+Copy files and directory trees
+
+XCOPY source destination /E

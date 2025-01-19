@@ -1,0 +1,6 @@
+The checkvm script, as its name suggests, checks to see if you exploited a virtual machine. This information can be very useful.
+
+meterpreter > run checkvm
+
+[*] Checking if SSHACKTHISBOX-0 is a Virtual Machine ........
+[*] This is a VMware Workstation/Fusion Virtual Machine

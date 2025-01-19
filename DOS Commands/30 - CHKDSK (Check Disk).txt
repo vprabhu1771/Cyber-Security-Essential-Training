@@ -1,0 +1,3 @@
+Check a disk for errors and fix them.
+
+CHKDSK drive_letter: /F

@@ -1,0 +1,13 @@
+The help command, as may be expected, displays the Meterpreter help menu.
+
+meterpreter > help
+
+Core Commands
+=============
+
+    Command       Description
+    -------       -----------
+    ?             Help menu
+    background    Backgrounds the current session
+    channel       Displays information about active channels
+...snip...

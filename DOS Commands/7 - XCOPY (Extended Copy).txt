@@ -1,0 +1,3 @@
+Copy files and directory trees with more options than the basic XCOPY command.
+
+XCOPY source destination /E /H /K /Y

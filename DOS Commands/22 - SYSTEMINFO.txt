@@ -1,0 +1,3 @@
+Display detailed configuration information about a computer and its operating system.
+
+SYSTEMINFO

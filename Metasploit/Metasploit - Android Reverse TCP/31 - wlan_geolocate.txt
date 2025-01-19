@@ -1,0 +1,5 @@
+The wlan_geolocation command allows you to locate the phone by retrieving the current lat-long using WLAN information. Example:
+
+meterpreter > wlan_geolocate
+[*] Google indicates the device is within 150 meters of 30.*******,-97.*******.
+[*] Google Maps URL:  https://maps.google.com/?q=30.*******,-97.*******

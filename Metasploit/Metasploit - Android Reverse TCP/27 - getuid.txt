@@ -1,0 +1,4 @@
+The getuid command shows the current user that the payload is running as:
+
+meterpreter > getuid
+Server username: u0_a231

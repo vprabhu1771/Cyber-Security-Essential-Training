@@ -1,0 +1,17 @@
+clipboard_monitor_dump
+
+Text captured at 2016-03-05 19:18:18.0466
+=========================================
+this is fun.
+=========================================
+
+Files captured at 2016-03-05 19:20:07.0525
+==========================================
+Remote Path : C:\Users\user\Desktop\cat_pic.png
+File size   : 37627 bytes
+downloading : C:\Users\user\Desktop\cat_pic.png -> ./cat_pic.png
+download    : C:\Users\user\Desktop\cat_pic.png -> ./cat_pic.png
+
+==========================================
+
+[+] Clipboard monitor dumped

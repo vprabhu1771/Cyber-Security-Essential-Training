@@ -1,0 +1,7 @@
+Running getuid will display the user that the Meterpreter server is running as on the host.
+
+meterpreter > getuid
+
+Server username: NT AUTHORITY\SYSTEM
+
+meterpreter >

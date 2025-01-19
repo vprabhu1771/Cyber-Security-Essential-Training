@@ -1,0 +1,54 @@
+cd /sdcard
+
+meterpreter > pwd
+/storage/emulated/0
+
+meterpreter > ls
+Listing: /storage/emulated/0
+============================
+
+Mode              Size     Type  Last modified              Name
+----              ----     ----  -------------              ----
+040777/rwxrwxrwx  3488     dir   2021-05-23 19:22:57 -0400  .face
+040776/rwxrwxrw-  3488     dir   2020-12-15 03:37:08 -0500  Alarms
+040776/rwxrwxrw-  3488     dir   2021-05-24 02:01:17 -0400  Android
+040776/rwxrwxrw-  3488     dir   2021-05-23 19:22:40 -0400  Audiobooks
+040776/rwxrwxrw-  3488     dir   2022-07-08 01:01:37 -0400  Call
+040776/rwxrwxrw-  3488     dir   2023-08-20 02:41:28 -0400  DCIM
+040776/rwxrwxrw-  3488     dir   2023-03-08 07:14:17 -0500  Documents
+040776/rwxrwxrw-  3488     dir   2023-09-01 02:53:46 -0400  Download
+100666/rw-rw-rw-  5537082  fil   2021-10-05 12:26:18 -0400  InAppUpdate_v1.aab
+040776/rwxrwxrw-  3488     dir   2021-04-01 06:22:45 -0400  MIUI
+040776/rwxrwxrw-  3488     dir   2022-07-29 10:12:27 -0400  Movies
+040776/rwxrwxrw-  3488     dir   2023-03-08 07:14:17 -0500  Music
+040776/rwxrwxrw-  3488     dir   2020-12-15 03:37:08 -0500  Notifications
+040776/rwxrwxrw-  3488     dir   2023-08-16 12:32:32 -0400  Pictures
+040776/rwxrwxrw-  3488     dir   2020-12-15 03:37:08 -0500  Podcasts
+040776/rwxrwxrw-  3488     dir   2022-09-05 11:58:14 -0400  Recordings
+040776/rwxrwxrw-  3488     dir   2021-07-30 08:24:50 -0400  Ringtones
+040776/rwxrwxrw-  3488     dir   2020-12-15 03:37:00 -0500  Samsung
+040776/rwxrwxrw-  3488     dir   2021-02-02 08:58:22 -0500  Telegram
+100666/rw-rw-rw-  116233   fil   2021-04-17 08:17:24 -0400  c-programs.pdf
+040776/rwxrwxrw-  3488     dir   2023-06-17 11:52:40 -0400  googletest
+100666/rw-rw-rw-  1127908  fil   2023-08-09 02:14:31 -0400  screenshot.png
+
+
+meterpreter > cd dcim
+
+meterpreter > ls
+Listing: /storage/emulated/0/dcim
+=================================
+
+Mode              Size     Type  Last modified              Name
+----              ----     ----  -------------              ----
+100666/rw-rw-rw-  4631307  fil   2021-12-08 01:32:59 -0500  4ab6b342-8f30-41a6-bb6f-949b7a1e7ae1.jpg
+100666/rw-rw-rw-  4298788  fil   2021-12-08 01:33:22 -0500  4d83abe3-bf8b-46c2-90eb-0d2a254c1399.jpg
+040776/rwxrwxrw-  53248    dir   2023-08-20 23:51:30 -0400  Camera
+040776/rwxrwxrw-  3488     dir   2022-07-23 03:51:24 -0400  Deco Pic
+040776/rwxrwxrw-  3488     dir   2022-01-05 06:17:08 -0500  DecoPic
+040776/rwxrwxrw-  20480    dir   2023-08-20 02:41:31 -0400  Facebook
+040776/rwxrwxrw-  3488     dir   2021-09-18 11:21:59 -0400  GIF
+040776/rwxrwxrw-  8192     dir   2023-08-20 02:41:31 -0400  Screenshots
+040776/rwxrwxrw-  3488     dir   2021-05-24 02:01:17 -0400  Videocaptures
+100666/rw-rw-rw-  127808   fil   2022-08-27 01:21:07 -0400  about.jpg
+

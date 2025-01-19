@@ -1,0 +1,12 @@
+@echo off
+
+set /a value=5
+
+set /a value-=1
+
+echo Decremented Value: %value%
+
+
+OUTPUT
+
+Decremented Value: 4

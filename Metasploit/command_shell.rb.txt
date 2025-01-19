@@ -1,0 +1,1 @@
+https://github.com/rapid7/metasploit-framework/blob/master/lib/msf/base/sessions/command_shell.rb

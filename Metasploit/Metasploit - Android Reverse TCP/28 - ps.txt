@@ -1,0 +1,27 @@
+The ps command shows a list of processes the Android device is running. For example:
+
+meterpreter > ps 
+
+Process List
+============
+
+ PID    Name                                                         Arch  User
+ ---    ----                                                         ----  ----
+ 1      /init                                                              root
+ 2      kthreadd                                                           root
+ 3      ksoftirqd/0                                                        root
+ 7      migration/0                                                        root
+ 8      rcu_preempt                                                        root
+ 9      rcu_bh                                                             root
+ 10     rcu_sched                                                          root
+ 11     watchdog/0                                                         root
+ 12     watchdog/1                                                         root
+ 13     migration/1                                                        root
+ 14     ksoftirqd/1                                                        root
+ 17     watchdog/2                                                         root
+ 18     migration/2                                                        root
+ 19     ksoftirqd/2                                                        root
+ 22     watchdog/3                                                         root
+ 23     migration/3                                                        root
+
+...

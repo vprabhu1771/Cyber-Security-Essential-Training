@@ -1,0 +1,3 @@
+Creating a custom module in the Metasploit Framework (MSF) to print "Hello, World!" is a simple task. Below is an example of a basic custom module that accomplishes this:
+
+Create a new file for your custom module. Let's name it `hello_world.rb`.

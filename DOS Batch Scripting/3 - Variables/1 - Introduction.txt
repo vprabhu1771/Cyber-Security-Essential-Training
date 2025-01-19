@@ -1,0 +1,16 @@
+In DOS batch scripting, variables are typically treated as strings. Batch scripting is not a strongly typed language like some other programming languages, so you don't explicitly declare variable types as int, float, double, char, or string. Instead, all variables are treated as strings by default.
+
+
+Variables are declared and accessed using % symbols:
+
+SET myVar=Hello
+
+ECHO %myVar%
+
+
+In this example:
+
+    The set /a command is used for integer arithmetic.
+    Float/Double is represented as a string, as batch scripting doesn't natively support floating-point arithmetic.
+    Character values are represented using substrings, where the first character of a string can be considered as a "char."
+    String variables are straightforward and can store any sequence of characters.

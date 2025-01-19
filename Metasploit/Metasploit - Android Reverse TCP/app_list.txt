@@ -1,0 +1,13 @@
+meterpreter > app_list
+
+Application List
+================
+
+  Name				Package                                                               Running  IsSystem
+  ----                          -------                                                               -------  --------
+  3 Button Navigation Bar       com.android.internal.systemui.navbar.threebutton                      false    true
+  AASAservice                   com.samsung.aasaservice                                               false    true
+  Accessibility                 com.samsung.accessibility                                             false    true
+  Airtel                        com.myairtelapp                                                       false    false
+  Airtel Services               com.android.stk                                                       false    true
+  Amazon                        in.amazon.mShop.android.shopping                                      false    false

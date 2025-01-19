@@ -1,0 +1,7 @@
+@echo off
+
+title Sample Batch Script
+
+echo Hello World
+
+pause

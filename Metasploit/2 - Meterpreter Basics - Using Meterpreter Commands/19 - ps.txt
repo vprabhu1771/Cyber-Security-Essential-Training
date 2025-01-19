@@ -1,0 +1,13 @@
+The ps command displays a list of running processes on the target.
+
+meterpreter > ps
+
+Process list
+============
+
+    PID   Name                  Path
+    ---   ----                  ----
+    132   VMwareUser.exe        C:\Program Files\VMware\VMware Tools\VMwareUser.exe
+    152   VMwareTray.exe        C:\Program Files\VMware\VMware Tools\VMwareTray.exe
+    288   snmp.exe              C:\WINDOWS\System32\snmp.exe
+...snip...

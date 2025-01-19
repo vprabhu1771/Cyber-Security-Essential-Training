@@ -1,0 +1,3 @@
+Display or modify file extension associations.
+
+ASSOC [.ext[=[fileType]]]

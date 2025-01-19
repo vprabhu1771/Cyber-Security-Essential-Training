@@ -1,0 +1,11 @@
+@echo off
+setlocal enabledelayedexpansion
+
+rem Clear the screen (Note: There is no direct equivalent to clrscr() in batch scripting)
+cls
+
+rem Display the value of x
+echo Hello World
+
+rem Wait for user input
+pause

@@ -1,0 +1,15 @@
+New features are added to Meterpreter by loading extensions.
+
+
+    The client uploads the DLL over the socket.
+
+    The server running on the victim loads the DLL in-memory and initializes it.
+
+    The new extension registers itself with the server.
+
+    The client on the attackers machine loads the local extension API and can now call the extensions functions.
+
+
+This entire process is seamless and takes approximately 1 second to complete.
+
+In the next Metasploit Unleashed tutorial we’ll discuss some of the various Meterpreter Commands available to us in this new environment.

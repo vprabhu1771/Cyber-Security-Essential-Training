@@ -1,0 +1,3 @@
+Create a new text file using the console (keyboard).
+
+COPY CON filename.txt

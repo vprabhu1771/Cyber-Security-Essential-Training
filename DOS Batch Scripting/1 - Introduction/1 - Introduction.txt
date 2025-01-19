@@ -1,0 +1,10 @@
+A batch file is a kind of script file containing a list of programmatic commands and instructions for Windows-based computers. When a user runs a batch file, it automatically executes each command in the script in sequence. Windows users and system administrators often use batch files to automate repetitive tasks instead of performing each step manually, like backing up a series of folders or renaming a large set of files.
+
+When you run a batch file, a command interpreter program reads it line by line, carrying out each command in order. Batch files come in two formats. Older DOS-based versions of Windows, like Windows 95 and 98, use batch files with the .BAT file extension through the COMMAND.COM command interpreter. NT-based versions of Windows, like Windows 2000 and all newer versions, use batch files with the .CMD extension through CMD.EXE. Both BAT and CMD files are plain text files you can create in any text editor like Notepad.
+
+
+Early versions of Windows automatically loaded a special batch file, AUTOEXEC.BAT, at system boot. This batch file automatically configured system settings and loaded device drivers. System administrators and power users could edit AUTOEXEC.BAT to customize Windows' behavior — for example, automatically mapping network drives on startup. However, inexperienced users could cause significant problems if they made the wrong changes, possibly preventing Windows from even booting.
+
+While batch files are unique to Windows computers, Unix-based operating systems (including Linux and macOS) use similar files called shell scripts. Both batch files and shell scripts can contain commands that modify important system settings or open up security holes, so you should be careful and never run unknown batch files you receive from untrusted sources.
+
+File extensions: .BAT, .CMD

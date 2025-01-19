@@ -1,0 +1,6 @@
+sessions
+
+
+Interact with the session by using the sessions -i <session number> command. This will allow you to execute commands and interact with the target machine.
+
+sessions -i <session number>

@@ -1,0 +1,10 @@
+Terminate the meterpreter session
+
+meterpreter > exit
+
+[*] Shutting down Meterpreter...
+
+[*] fe80::4085:55ff:fead:10d6 - Meterpreter session 1 closed.  Reason: User exit
+
+
+

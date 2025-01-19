@@ -1,0 +1,7 @@
+The sysinfo command shows you basic information about the Android device.
+
+meterpreter > sysinfo
+
+Computer    : localhost
+OS          : Android 5.1.1 - Linux 3.10.61-6309174 (aarch64)
+Meterpreter : java/android

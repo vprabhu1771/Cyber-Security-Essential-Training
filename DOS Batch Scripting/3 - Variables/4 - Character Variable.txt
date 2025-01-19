@@ -1,0 +1,24 @@
+Char: %myChar% is a string variable, and %myChar:~0,1% extracts the first character, simulating a char.
+
+@echo off
+
+setlocal
+
+
+REM Char (using substring)
+
+set gender=Male
+
+set gender=%gender:~0,1%
+
+echo Char: %gender%
+
+
+endlocal
+
+
+OUTPUT
+
+app.bat
+
+Char: M

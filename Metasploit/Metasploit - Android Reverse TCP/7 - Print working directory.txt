@@ -1,0 +1,4 @@
+cd /sdcard
+
+meterpreter > pwd
+/storage/emulated/0

@@ -1,0 +1,12 @@
+@echo off
+
+set /a value=10
+
+set /a value+=1
+
+echo Incremented Value: %value%
+
+
+OUTPUT
+
+Incremented Value: 11

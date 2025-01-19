@@ -1,0 +1,10 @@
+Here is a complete list of advanced options supported by the windows/wlan/wlan_profile post exploitation module:
+
+msf6 post(windows/wlan/wlan_profile) > show advanced
+
+Module advanced options (post/windows/wlan/wlan_profile):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   VERBOSE    false            no        Enable detailed status messages
+   WORKSPACE                   no        Specify the workspace for this module

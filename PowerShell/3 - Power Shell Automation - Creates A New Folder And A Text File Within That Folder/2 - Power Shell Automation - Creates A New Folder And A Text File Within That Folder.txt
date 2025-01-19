@@ -1,0 +1,12 @@
+# Define the folder path and file name
+$folderPath = "C:\MyFolder"
+$fileName = "MyFile.txt"
+
+# Create the folder
+New-Item -ItemType Directory -Path $folderPath
+
+# Create the text file within the folder
+$file = New-Item -ItemType File -Path (Join-Path -Path $folderPath -ChildPath $fileName)
+
+# Output the path of the created file
+Write-Host "Created file: $($file.FullName)"

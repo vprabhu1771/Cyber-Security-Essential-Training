@@ -1,0 +1,1 @@
+https://www.infosecmatter.com/smb-brute-force-attack-tool-in-powershell-smblogin-ps1/

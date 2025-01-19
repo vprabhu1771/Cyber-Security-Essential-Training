@@ -1,0 +1,23 @@
+The search commands provides a way of locating specific files on the target host. The command is capable of searching through the whole system or specific folders. Wildcards can also be used when creating the file pattern to search for.
+
+meterpreter > search
+[-] You must specify a valid file glob to search for, e.g. >search -f *.doc
+
+
+ARGUMENTS:
+
+File pattern:	 	May contain wildcards
+Search location:	Optional, if none is given the whole system will be searched.
+
+
+Example usage:
+
+meterpreter > search -f autoexec.bat
+Found 1 result...
+    c:\AUTOEXEC.BAT
+
+meterpreter > search -f sea*.bat c:\\xamp\\
+Found 1 result...
+    c:\\xampp\perl\bin\search.bat (57035 bytes)
+
+meterpreter >

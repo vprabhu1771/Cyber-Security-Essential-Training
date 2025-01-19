@@ -1,0 +1,3 @@
+Compare the contents of two files or sets of files and display the differences.
+
+FC file1 file2

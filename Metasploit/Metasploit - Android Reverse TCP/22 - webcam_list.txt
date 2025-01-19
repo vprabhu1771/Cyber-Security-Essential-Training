@@ -1,0 +1,3 @@
+meterpreter > webcam_list
+1: Back Camera
+2: Front Camera

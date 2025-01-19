@@ -1,0 +1,3 @@
+Scan and repair protected system files.
+
+SFC /SCANNOW

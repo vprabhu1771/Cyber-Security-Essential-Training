@@ -1,0 +1,25 @@
+a11y.text getcountermeasure
+
+The getcountermeasure script checks the security configuration on the victims system and can disable other security measures such as A/V, Firewall, and much more.
+
+meterpreter > run getcountermeasure
+
+[*] Running Getcountermeasure on the target...
+[*] Checking for contermeasures...
+[*] Getting Windows Built in Firewall configuration...
+[*]
+[*]     Domain profile configuration:
+[*]     -------------------------------------------------------------------
+[*]     Operational mode                  = Disable
+[*]     Exception mode                    = Enable
+[*]
+[*]     Standard profile configuration:
+[*]     -------------------------------------------------------------------
+[*]     Operational mode                  = Disable
+[*]     Exception mode                    = Enable
+[*]
+[*]     Local Area Connection 6 firewall configuration:
+[*]     -------------------------------------------------------------------
+[*]     Operational mode                  = Disable
+[*]
+[*] Checking DEP Support Policy...

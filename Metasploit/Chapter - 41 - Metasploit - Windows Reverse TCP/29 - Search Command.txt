@@ -1,0 +1,5 @@
+The search command allows you to find files on the remote file system. For example, this demonstrates how to find all text files in the current directory:
+
+search -d . -f *.txt
+Found 1 result...
+    .\something.txt (5 bytes)

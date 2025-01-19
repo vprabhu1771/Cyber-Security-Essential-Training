@@ -1,0 +1,3 @@
+In batch scripts, you can use REM for comments:
+
+REM This is a comment

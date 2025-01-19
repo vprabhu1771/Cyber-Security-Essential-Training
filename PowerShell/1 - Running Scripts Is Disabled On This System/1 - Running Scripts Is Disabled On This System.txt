@@ -1,0 +1,27 @@
+If you encounter the "running scripts is disabled on this system" error, it means that the default security policy in PowerShell prevents the execution of scripts. By default, PowerShell restricts running scripts to protect against malicious code.
+
+To resolve this issue, you can temporarily bypass the execution policy for the current session or permanently change the execution policy. Here are the steps for each approach:
+
+Temporary Bypass:
+1. Open an elevated PowerShell session by right-clicking on the PowerShell icon and selecting "Run as administrator".
+2. Execute the following command to bypass the execution policy:
+   ```powershell
+   Set-ExecutionPolicy Bypass -Scope Process
+   ```
+3. Confirm the change by entering "Y" when prompted.
+4. Now, you should be able to run your PowerShell script without encountering the "running scripts is disabled on this system" error.
+
+Permanent Change:
+1. Open an elevated PowerShell session.
+2. Execute the following command to change the execution policy to RemoteSigned (allows running local scripts) or Unrestricted (allows running local and downloaded scripts):
+   ```powershell
+   Set-ExecutionPolicy RemoteSigned
+   ```
+   or
+   ```powershell
+   Set-ExecutionPolicy Unrestricted
+   ```
+3. Confirm the change by entering "Y" when prompted.
+4. You can now run your PowerShell scripts without encountering the error.
+
+Please note that changing the execution policy to bypass security restrictions carries some level of risk. It is essential to exercise caution and only run scripts from trusted sources. Once you have completed your script execution, you can consider reverting the execution policy to a more secure setting using the `Set-ExecutionPolicy` cmdlet.

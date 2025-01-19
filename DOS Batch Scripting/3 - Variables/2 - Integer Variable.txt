@@ -1,0 +1,22 @@
+Integer: %myInt% is an integer variable.
+
+@echo off
+
+setlocal
+
+
+REM Integer
+
+set /a myInt=42
+
+echo Integer: %myInt%
+
+
+endlocal
+
+
+OUTPUT
+
+app.bat
+
+Integer: 42
