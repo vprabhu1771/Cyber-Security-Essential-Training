@@ -1,0 +1,92 @@
+service apache2 start
+
+which php
+                    
+/usr/bin/php
+
+
+php --version
+
+PHP 8.2.7 (cli) (built: Jun  9 2023 06:51:32) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.2.7, Copyright (c) Zend Technologies
+    with Zend OPcache v8.2.7, Copyright (c), by Zend Technologies
+
+
+cd /etc/php/8.2/apache2
+
+ls
+
+sudo mousepad php.ini
+
+mousepad -> Search -> Find -> display_errors
+
+
+display_errors = Off
+
+; The display of errors which occur during PHP's startup sequence are handled
+; separately from display_errors. We strongly recommend you set this to 'off'
+; for production servers to avoid leaking configuration details.
+; Default Value: On
+; Development Value: On
+; Production Value: Off
+; https://php.net/display-startup-errors
+display_startup_errors = Off
+
+
+Change To
+
+
+display_errors = On
+
+; The display of errors which occur during PHP's startup sequence are handled
+; separately from display_errors. We strongly recommend you set this to 'off'
+; for production servers to avoid leaking configuration details.
+; Default Value: On
+; Development Value: On
+; Production Value: Off
+; https://php.net/display-startup-errors
+display_startup_errors = On
+
+
+mousepad -> Search -> Find -> allow_url_fopen
+
+
+;;;;;;;;;;;;;;;;;;
+; Fopen wrappers ;
+;;;;;;;;;;;;;;;;;;
+
+; Whether to allow the treatment of URLs (like http:// or ftp://) as files.
+; https://php.net/allow-url-fopen
+allow_url_fopen = On
+
+; Whether to allow include/require to open URLs (like https:// or ftp://) as files.
+; https://php.net/allow-url-include
+allow_url_include = Off
+
+
+Change To
+
+;;;;;;;;;;;;;;;;;;
+; Fopen wrappers ;
+;;;;;;;;;;;;;;;;;;
+
+; Whether to allow the treatment of URLs (like http:// or ftp://) as files.
+; https://php.net/allow-url-fopen
+allow_url_fopen = On
+
+; Whether to allow include/require to open URLs (like https:// or ftp://) as files.
+; https://php.net/allow-url-include
+allow_url_include = On
+
+
+mousepad -> Search -> Find -> gd
+
+;extension=gd
+
+Change To
+
+extension=gd
+
+
+service apache2 start

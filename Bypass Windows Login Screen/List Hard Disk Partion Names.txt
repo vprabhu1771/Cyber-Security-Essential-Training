@@ -1,0 +1,5 @@
+wmic logicaldisk get name
+
+Name
+C:
+D:

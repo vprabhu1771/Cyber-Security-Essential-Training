@@ -1,0 +1,37 @@
+https://github.com/digininja/DVWA
+
+cd /var/www/html/
+
+sudo git clone https://github.com/digininja/DVWA.git
+
+ls
+
+sudo chmod -R 777 DVWA
+
+cd DVWA/config
+
+ls
+
+cp config.inc.php.dist config.inc.php
+
+sudo mousepad config.inc.php
+
+
+$_DVWA = array();
+$_DVWA[ 'db_server' ]   = getenv('DB_SERVER') ?: '127.0.0.1';
+$_DVWA[ 'db_database' ] = 'dvwa';
+$_DVWA[ 'db_user' ]     = 'dvwa';
+$_DVWA[ 'db_password' ] = 'p@ssw0rd';
+$_DVWA[ 'db_port']      = '3306';
+
+
+Change to 
+
+$_DVWA = array();
+$_DVWA[ 'db_server' ]   = getenv('DB_SERVER') ?: '127.0.0.1';
+$_DVWA[ 'db_database' ] = 'dvwa';
+$_DVWA[ 'db_user' ]     = 'user';
+$_DVWA[ 'db_password' ] = 'pass';
+$_DVWA[ 'db_port']      = '3306';
+
+
