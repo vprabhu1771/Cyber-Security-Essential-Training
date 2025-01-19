@@ -1,0 +1,1 @@
+sudo sqlmap -r request.txt --dbs --dump --thread 10

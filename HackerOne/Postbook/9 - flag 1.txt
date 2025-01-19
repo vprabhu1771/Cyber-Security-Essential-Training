@@ -1,0 +1,13 @@
+1) Go to Home Page
+
+click any post
+
+
+
+2) Try these
+
+https://25862fab8e07ba22e15a77a683473ec2.ctf.hacker101.com/index.php?page=view.php&id=1
+
+https://25862fab8e07ba22e15a77a683473ec2.ctf.hacker101.com/index.php?page=view.php&id=2 -> flag found
+
+https://25862fab8e07ba22e15a77a683473ec2.ctf.hacker101.com/index.php?page=view.php&id=3

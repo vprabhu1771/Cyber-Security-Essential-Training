@@ -1,0 +1,11 @@
+1) Go to Sign in Page
+
+
+
+2) Enter Input
+
+username: user
+
+password: password
+
+Click login

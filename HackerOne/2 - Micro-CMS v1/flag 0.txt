@@ -1,0 +1,46 @@
+You Already Have Two Post
+
+* Testing 
+* Markdown Test
+
+Create Another One or Two Post
+
+* Page 3
+
+* Page 4
+
+
+Investiage
+
+When you visit Testing page as you may see url
+
+https://3494.3.143/2a44c7bcda/page/1
+
+
+When you visit Markdown Test page as you may see url
+
+https://3494.3.143/2a44c7bcda/page/2
+
+
+Try Visit Page 3 you may find 
+
+https://3494.3.143/2a44c7bcda/page/6
+
+
+Try Visit Page 4 you may find 
+
+https://3494.3.143/2a44c7bcda/page/7
+
+
+
+Try Change 
+https://3494.3.143/2a44c7bcda/page/3
+https://3494.3.143/2a44c7bcda/page/4
+
+
+try Edit Page route
+
+https://3494.3.143/2a44c7bcda/page/edit/1
+https://3494.3.143/2a44c7bcda/page/edit/2
+https://3494.3.143/2a44c7bcda/page/edit/3
+https://3494.3.143/2a44c7bcda/page/edit/4 -> Bingo You found flag

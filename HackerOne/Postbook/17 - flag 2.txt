@@ -1,0 +1,17 @@
+1) Go to Write a new post
+
+Right click -> Inspect Element
+
+you may find hidden field remove hidden attribute
+
+try change value 2 to 1
+
+enter form details
+
+test
+
+test
+
+click create
+
+flag found

@@ -1,0 +1,36 @@
+1) Go to My profile
+
+under Posts 
+
+Click Hello everyone! -> Click Edit
+
+
+https://25862fab8e07ba22e15a77a683473ec2.ctf.hacker101.com/index.php?page=edit.php&id=3
+
+to
+
+https://25862fab8e07ba22e15a77a683473ec2.ctf.hacker101.com/index.php?page=edit.php&id=1
+
+
+
+2) edit post
+
+Title:
+Hello world
+
+Post:
+This is the first post!
+
+to
+
+Title:
+Hello world (Edited)
+
+Post:
+This is the first post!
+
+EDITED
+
+click save
+
+you may find flag

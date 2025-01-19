@@ -1,0 +1,9 @@
+<button>some r</button>
+<img src="x onerrror=alert(document.cookie) />
+
+or
+
+Title
+tests
+
+<button onclick=alert()>XSS Button</button>

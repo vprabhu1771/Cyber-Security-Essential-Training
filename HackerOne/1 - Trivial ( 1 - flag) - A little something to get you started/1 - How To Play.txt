@@ -1,0 +1,11 @@
+Go to How To Play
+
+https://ctf.hacker101.com/howtoplay
+
+The Hacker101 CTF is split into separate levels, each of which containing some number of flags. You can play through the levels in any order you want; more than anything else, the goal is to learn and have fun doing it.
+
+Once you enter a level, you're going to be searching for the flags, using every skill and tool in your arsenal. Flags are placed in various locations -- they might be in a file, in the database, stuck into source code, or otherwise -- and your goal is to hunt them all down. Each flag looks something like 
+
+^FLAG^37ae568362f974017fa575f08cd215044cd6bb395c3f5e5e293ee5324ba6769c$FLAG$, 
+
+so you'll know the instant you see one.

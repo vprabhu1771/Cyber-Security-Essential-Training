@@ -1,0 +1,45 @@
+A little something to get you started
+
+Skill - Web
+
+As you can see There is only few words on the page and nothing to click on so what we will do is 
+
+
+1) View th Source Code of The Current Page
+
+Right Click -> View Page Source
+
+
+2) Source Code You may find
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+
+        body {
+            background-image: url("background.png");
+        }
+
+    </style>    
+    
+</head>
+<body>
+    <p>Welcome to level 0, Enjoy your stay.</p>
+</body>
+</html>
+
+3) Hint
+
+Flag is Hidden background.png
+
+
+4) Back to View Page Source and Add Following Path
+
+/backgound.png
+
+5) Submit Flag
+
+copy and paste the flag
+

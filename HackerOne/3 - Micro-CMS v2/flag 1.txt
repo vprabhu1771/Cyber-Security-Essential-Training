@@ -1,0 +1,19 @@
+1) Try
+
+https://62a5780cc2e2e5371beac920925073a0.ctf.hacker101.com/page/1
+
+https://62a5780cc2e2e5371beac920925073a0.ctf.hacker101.com/page/edit/1
+
+
+2) Open Burp Suit
+
+Proxy Tab -> Turn Intercept is ON
+
+go login page
+
+username: abcd
+password: 
+
+click Login
+
+right click intercept -> go to repeater

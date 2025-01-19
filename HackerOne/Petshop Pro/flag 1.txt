@@ -1,0 +1,10 @@
+1) Go to Google
+
+Search seclist
+
+2) go Github Page
+
+https://github.com/danielmiessler/SecLists/tree/master/Usernames/Names
+
+
+https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt

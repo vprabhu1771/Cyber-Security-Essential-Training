@@ -1,0 +1,8 @@
+1) Go to Hello everyone! Post
+
+https://25862fab8e07ba22e15a77a683473ec2.ctf.hacker101.com/index.php?page=view.php&id=3
+
+to
+
+https://25862fab8e07ba22e15a77a683473ec2.ctf.hacker101.com/index.php?page=view.php&id=945
+

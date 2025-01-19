@@ -1,0 +1,8 @@
+"><script>document.cookie</script>
+
+or
+
+Title:
+<script>alert()</script>
+
+<script>alert('desc')</script>

@@ -1,0 +1,48 @@
+1) Go to Home Page
+
+Right Click -> Hello World(Edited) -> Inspect Element -> Click on Delete 
+
+<a style="color: red;" href="index.php?page=delete.php&amp;id=eccbc87e4b5ce2fe28308fd9f2a7baf3">delete</a>
+
+
+2) Go to MD5 Reverse Hash
+
+https://md5.gromweb.com/
+
+Reverse a MD5 hash
+Enter a MD5 hash to reverse...
+
+for eg:c4ca4238a0b923820dcc509a6f75849b
+
+OUTPUT
+
+The MD5 hash:
+c4ca4238a0b923820dcc509a6f75849b
+
+was succesfully reversed into the string:
+1
+
+
+3) Convert value to MD5 Hash
+
+https://md5.gromweb.com/
+
+Convert a string to a MD5 hash
+Enter a string to be converted into a MD5 hash...
+
+for eg:
+3
+
+The MD5 hash of:
+3
+is:
+eccbc87e4b5ce2fe28308fd9f2a7baf3
+
+
+4) Change Hash Value of id key
+
+Right Click -> Inspect Elements -> Storage -> Cookies -> 
+
+paste id value 
+
+click refresh
