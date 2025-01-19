@@ -1,0 +1,41 @@
+# 1 - Install NVIDIA driver
+
+```
+sudo apt install nvidia-detect
+```
+
+```
+sudo nvidia-detect
+```
+
+```
+Detected NVIDIA GPUs:
+01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP107 [GeForce GTX 1050 Ti] [10de:1c82] (rev a1)
+
+Checking card:  NVIDIA Corporation GP107 [GeForce GTX 1050 Ti] (rev a1)
+Your card is supported by all driver versions.
+Your card is also supported by the Tesla 470 drivers series.
+Your card is also supported by the Tesla 450 drivers series.
+Your card is also supported by the Tesla 418 drivers series.
+It is recommended to install the
+    nvidia-driver
+package.
+```
+
+```
+sudo apt install nvidia-driver
+```
+
+NVIDIA X Server Settings
+
+# 2 - Install AMD driver
+
+```
+sudo apt install firmware-linux firmware-linux-nonfree libdrm-amdgpu1 xserver-xorg-video-amdgpu
+```
+
+```
+sudo apt install mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-validationlayers
+```
+
+Restart PC AMD DRVIER BECOME EFFECTIVE

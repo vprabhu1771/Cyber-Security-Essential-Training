@@ -1,0 +1,29 @@
+lsb_release -help
+
+
+Usage: lsb_release [options]
+
+Options:
+  -h, --help         show this help message and exit
+  -v, --version      show LSB modules this system supports
+  -i, --id           show distributor ID
+  -d, --description  show description of this distribution
+  -r, --release      show release number of this distribution
+  -c, --codename     show code name of this distribution
+  -a, --all          show all of the above information
+  -s, --short        show requested information in short format
+
+
+lsb_release 
+
+No LSB modules are available.
+
+
+lsb_release -a
+
+No LSB modules are available.
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 11 (bullseye)
+Release:	11
+Codename:	bullseye
+

@@ -1,0 +1,33 @@
+Install & Change Desktop Environments in Ubuntu
+
+https://www.youtube.com/watch?v=ifyu2mcze4M
+
+Desktop Environment & Commands
+
+Check Currect Desktop Environment
+
+echo $XDG_CURRENT_DESKTOP
+
+-MATE
+sudo apt install mate-desktop-environment mate-desktop-environment-extras ubuntu-mate-themes
+
+-Cinnamon
+sudo apt install cinnamon-desktop-environment
+
+-GNOME
+sudo apt install gnome-session
+
+-KDE Plasma
+sudo apt install kde-standard
+
+-UKUI
+sudo apt install ukui-desktop-environment
+
+-XFCE
+sudo apt install xfce4 xfce4-goodies
+
+-LXDE
+sudo apt install lxde
+
+-LXQt
+sudo apt install lxqt

@@ -1,0 +1,31 @@
+echo "Enter any option"
+read option
+
+case $option in
+1) 
+        echo "Good Morning" ;;
+
+2)
+        echo "Good Afternoon" ;;
+
+3)
+        echo "Good Evening" ;;
+
+4)
+        echo "Good Night" ;;
+
+*)      
+        echo "Invaild Option" ;;
+
+esac
+
+
+OUTPUT
+
+Enter any option
+2
+Good Afternoon
+
+Enter any option
+44
+Invaild Option

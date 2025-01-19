@@ -1,0 +1,61 @@
+To know only the system name, you can use the uname command without any switch that will print system information or the uname -s command will print the kernel name of your system.
+
+
+uname --help
+
+Usage: uname [OPTION]...
+Print certain system information.  With no OPTION, same as -s.
+
+  -a, --all                print all information, in the following order,
+                             except omit -p and -i if unknown:
+  -s, --kernel-name        print the kernel name
+  -n, --nodename           print the network node hostname
+  -r, --kernel-release     print the kernel release
+  -v, --kernel-version     print the kernel version
+  -m, --machine            print the machine hardware name
+  -p, --processor          print the processor type (non-portable)
+  -i, --hardware-platform  print the hardware platform (non-portable)
+  -o, --operating-system   print the operating system
+      --help     display this help and exit
+      --version  output version information and exit
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/uname>
+or available locally via: info '(coreutils) uname invocation
+
+
+uname
+
+Linux
+
+
+To view your network hostname, use the ‘-n’ switch with the uname command as shown.
+
+uname -n
+
+DESKTOP-IHP1P7
+
+
+To get information about kernel-version, use the ‘-v’ switch.
+
+uname -v
+
+#1 SMP Debian 5.10.149-2 (2022-10-21)
+
+
+To get the information about your kernel release, use the ‘-r’ switch.
+
+5.10.0-19-amd64
+
+
+To print your machine hardware name, use the ‘-m’ switch:
+
+uname -m
+
+x86_64
+
+
+All this information can be printed at once by running the ‘uname -a’ command as shown below.
+
+uname -a
+Linux DESKTOP-IHP1P7I 5.10.0-19-amd64 #1 SMP Debian 5.10.149-2 (2022-10-21) x86_64 GNU/Linux

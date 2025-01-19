@@ -1,0 +1,3 @@
+In the Previous command, we created a copy of the file named Sample. Let’s see how what happens if we use the mv command in the same manner. For this demonstration, I’ll delete the Sample-Copy file.
+
+mv <source> <destination

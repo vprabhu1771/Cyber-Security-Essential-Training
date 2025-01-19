@@ -1,0 +1,23 @@
+echo "Enter x value"
+
+read x
+
+echo "Enter y value"
+
+read y
+
+echo "x = $x"
+
+echo "y = $y"
+
+OUTPUT
+
+Enter x value
+10
+
+Enter y value
+5
+
+x = 10
+
+y = 5

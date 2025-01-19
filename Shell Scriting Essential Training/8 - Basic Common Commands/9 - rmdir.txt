@@ -1,0 +1,13 @@
+The rm command is used to delete files and folders and is one of the important Linux commands you must know.
+
+
+Command 
+
+rmdir <folder name>
+
+
+To delete a directory, you have to add the -r argument to it. Without the -r argument, rm command won’t delete directories.
+
+Command 
+
+rmdir -r <folder name>

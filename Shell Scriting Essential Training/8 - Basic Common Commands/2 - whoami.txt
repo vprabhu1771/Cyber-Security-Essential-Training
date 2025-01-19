@@ -1,0 +1,10 @@
+get the active username
+
+Command 
+
+whoami
+
+
+OUTPUT
+
+linux_rig2

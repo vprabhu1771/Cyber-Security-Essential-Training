@@ -1,0 +1,11 @@
+https://stackoverflow.com/questions/47806576/linux-username-is-not-in-the-sudoers-file-this-incident-will-be-reported
+
+Open File
+
+su root
+
+nano /etc/sudoers
+
+Then add the user below admin user like below syntax.
+
+user_name ALL=(ALL)  ALL

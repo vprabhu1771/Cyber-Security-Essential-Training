@@ -1,0 +1,62 @@
+Block devices are storage devices such as hard disks, flash drives, etc. lsblk command is used to report information about block devices as follows.
+
+lsblk
+
+NAME    MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda       8:0    0 931.5G  0 disk 
+├─sda1    8:1    0  1000M  0 part 
+├─sda2    8:2    0   260M  0 part /boot/efi
+├─sda3    8:3    0  1000M  0 part 
+├─sda4    8:4    0   128M  0 part 
+├─sda5    8:5    0 557.1G  0 part 
+├─sda6    8:6    0    25G  0 part 
+├─sda7    8:7    0  14.7G  0 part 
+├─sda8    8:8    0     1M  0 part 
+├─sda9    8:9    0 324.5G  0 part /
+└─sda10   8:10   0   7.9G  0 part [SWAP]
+sr0      11:0    1  1024M  0 rom 
+
+
+If you want to view all block devices on your system then include the -a option.
+
+lsblk -a
+
+NAME    MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda       8:0    0 931.5G  0 disk 
+├─sda1    8:1    0  1000M  0 part 
+├─sda2    8:2    0   260M  0 part /boot/efi
+├─sda3    8:3    0  1000M  0 part 
+├─sda4    8:4    0   128M  0 part 
+├─sda5    8:5    0 557.1G  0 part 
+├─sda6    8:6    0    25G  0 part 
+├─sda7    8:7    0  14.7G  0 part 
+├─sda8    8:8    0     1M  0 part 
+├─sda9    8:9    0 324.5G  0 part /
+└─sda10   8:10   0   7.9G  0 part [SWAP]
+sdb       8:16   1         0 disk 
+sr0      11:0    1  1024M  0 rom  
+ram0      1:0    0    64M  0 disk 
+ram1      1:1    0    64M  0 disk 
+ram2      1:2    0    64M  0 disk 
+ram3      1:3    0    64M  0 disk 
+ram4      1:4    0    64M  0 disk 
+ram5      1:5    0    64M  0 disk 
+ram6      1:6    0    64M  0 disk 
+ram7      1:7    0    64M  0 disk 
+ram8      1:8    0    64M  0 disk 
+ram9      1:9    0    64M  0 disk 
+loop0     7:0    0         0 loop 
+loop1     7:1    0         0 loop 
+loop2     7:2    0         0 loop 
+loop3     7:3    0         0 loop 
+loop4     7:4    0         0 loop 
+loop5     7:5    0         0 loop 
+loop6     7:6    0         0 loop 
+loop7     7:7    0         0 loop 
+ram10     1:10   0    64M  0 disk 
+ram11     1:11   0    64M  0 disk 
+ram12     1:12   0    64M  0 disk 
+ram13     1:13   0    64M  0 disk 
+ram14     1:14   0    64M  0 disk 
+ram15     1:15   0    64M  0 disk 
+

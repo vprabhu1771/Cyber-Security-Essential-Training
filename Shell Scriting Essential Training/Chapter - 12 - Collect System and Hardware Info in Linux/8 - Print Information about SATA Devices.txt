@@ -1,0 +1,19 @@
+You can find some information about sata devices on your system as follows using the hdparm utility. In the example below, I used the block device /dev/sda1 which is the hard disk on my system.
+
+sudo hdparm /dev/sda1
+
+/dev/sda1:
+ multcount     =  0 (off)
+ IO_support    =  1 (32-bit)
+ readonly      =  0 (off)
+ readahead     = 256 (on)
+ geometry      = 56065/255/63, sectors = 2048000, start = 2048
+ 
+ 
+ To print information about device geometry in terms of cylinders, heads, sectors, size, and the starting offset of the device, use the -g option.
+ 
+ 
+sudo hdparm -g /dev/sda1
+
+/dev/sda1:
+ geometry      = 56065/255/63, sectors = 2048000, start = 2048

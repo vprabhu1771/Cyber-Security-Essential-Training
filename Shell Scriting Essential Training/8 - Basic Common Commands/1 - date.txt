@@ -1,0 +1,10 @@
+date command is used to display the system date and time. 
+
+Command
+
+date
+
+
+OUTPUT
+
+Friday 20 January 2023 06:47:14 PM IST

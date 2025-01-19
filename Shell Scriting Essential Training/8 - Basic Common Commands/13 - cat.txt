@@ -1,0 +1,5 @@
+When you want to output the contents of a file, or print anything to the terminal output, we make use of the cat or echo commands.
+
+Command
+
+cat <file name>

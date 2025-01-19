@@ -1,0 +1,25 @@
+To view information about your CPU, use the lscpu command as it shows information about your CPU architecture such as a number of CPUs, cores, CPU family model, CPU caches, threads, etc from sysfs and /proc/cpuinfo.
+
+lscpu
+
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+Thread(s) per core:    2
+Core(s) per socket:    2
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 69
+Stepping:              1
+CPU MHz:               768.000
+BogoMIPS:              4788.72
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              3072K
+NUMA node0 CPU(s):     0-3

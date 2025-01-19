@@ -1,0 +1,9 @@
+ls -l
+
+ls -l | awk '{print $1}' data.txt
+
+
+ls -l | awk '{print $2}' data.txt
+
+
+ls -l | awk '{print $5}' data.txt

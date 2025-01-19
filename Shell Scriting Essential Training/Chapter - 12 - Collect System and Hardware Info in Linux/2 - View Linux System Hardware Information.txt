@@ -1,0 +1,81 @@
+Here you can use the lshw tool to gather vast information about your hardware components such as cpu, disks, memory, usb controllers, etc.
+
+lshw is a relatively small tool and there are few options that you can use with it while extracting information. The information provided by lshw was gathered from different /proc files.
+
+Note: Do remember that the lshw command is executed by the superuser (root) or sudo user.
+
+sudo apt-get install lshw
+
+
+To print information about your Linux system hardware, run this command.
+
+sudo lshw
+
+tecmint.com               
+    description: Notebook
+    product: 20354 (LENOVO_MT_20354_BU_idea_FM_Lenovo Z50-70)
+    vendor: LENOVO
+    version: Lenovo Z50-70
+    serial: 1037407803441
+    width: 64 bits
+    capabilities: smbios-2.7 dmi-2.7 vsyscall32
+    configuration: administrator_password=disabled boot=normal 
+    chassis=notebook family=IDEAPAD frontpanel_password=disabled 
+    keyboard_password=disabled power-on_password=disabled 
+    sku=LENOVO_MT_20354_BU_idea_FM_Lenovo Z50-70 
+    uuid=E4B1D229-D237-E411-9F6E-28D244EBBD98
+  *-core
+       description: Motherboard
+       product: Lancer 5A5
+       vendor: LENOVO
+       physical id: 0
+       version: 31900059WIN
+       serial: YB06377069
+       slot: Type2 - Board Chassis Location
+     *-firmware
+          description: BIOS
+          vendor: LENOVO
+          physical id: 0
+          version: 9BCN26WW
+          date: 07/31/2014
+          size: 128KiB
+          capacity: 4032KiB
+          capabilities: pci upgrade shadowing cdboot bootselect edd  
+          int13floppytoshiba int13floppy360 int13floppy1200 int13floppy720 
+int13floppy2880 int9keyboard int10video acpi usb biosbootspecification uefi
+......
+
+
+You can print a summary of your hardware information by using the -short option.
+
+sudo lshw -short
+
+
+H/W path       Device      Class          Description
+=====================================================
+                           system         20354 (LENOVO_MT_20354_
+                                          BU_idea_FM_Lenovo Z50-70)
+/0                         bus            Lancer 5A5
+/0/0                       memory         128KiB BIOS
+/0/4                       processor      Intel(R) Core(TM) i5-4210U 
+                                          CPU @ 1.70GHz
+/0/4/b                     memory         32KiB L1 cache
+/0/4/c                     memory         256KiB L2 cache
+/0/4/d                     memory         3MiB L3 cache
+/0/a                       memory         32KiB L1 cache
+/0/12                      memory         8GiB System Memory
+/0/12/0                    memory         DIMM [empty]
+/0/12/1                    memory         DIMM [empty]
+/0/12/2                    memory         8GiB SODIMM DDR3 Synchronous 
+                                          1600 MHz (0.6 ns)
+/0/12/3                    memory         DIMM [empty]
+/0/100                     bridge         Haswell-ULT DRAM Controller
+/0/100/2                   display        Haswell-ULT Integrated 
+                                          Graphics Controller
+/0/100/3                   multimedia     Haswell-ULT HD Audio Controller
+...
+
+
+If you wish to generate output as an html file, you can use the option -html.
+
+sudo lshw -html > lshw.html

@@ -1,0 +1,26 @@
+echo "enter your age"
+
+read age
+
+# full syntax
+
+if [ $age -ge 18 ]; then  echo "eligible for voting"; else echo "not eligible f>
+
+# short syntax
+
+[ $age -ge 18 ] && echo "eligible for voting" || echo "not eligible for voting"
+
+
+OUTPUT
+
+enter your age
+23
+eligible for voting
+eligible for voting
+
+
+enter your age
+11
+not eligible for voting
+not eligible for voting
+

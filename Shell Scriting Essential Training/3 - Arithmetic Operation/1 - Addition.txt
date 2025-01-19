@@ -1,0 +1,38 @@
+echo "Enter x value"
+
+read x
+
+echo "Enter y value"
+
+read y
+
+echo "x = $x"
+
+echo "y = $y"
+
+echo "$x + $y = $((x+y))"
+
+#using expr
+echo "$x + $y = $(expr $x + $y)"
+
+# using expr with bracket
+echo "$x + $y = $[$x + $y]"
+
+
+OUTPUT
+
+Enter x value
+2
+
+Enter y value
+2
+
+x = 2
+
+y = 2
+
+2 + 2 = 4
+
+2 + 2 = 4
+
+2 + 2 = 4

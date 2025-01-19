@@ -1,0 +1,14 @@
+count=1
+while [ $count -le 5 ]
+do
+  echo "count $count"
+  count=$(( $count + 1 ))
+done
+
+OUTPUT
+
+count 1
+count 2
+count 3
+count 4
+count 5

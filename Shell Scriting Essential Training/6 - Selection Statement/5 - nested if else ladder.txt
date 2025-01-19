@@ -1,0 +1,35 @@
+echo "enter your age"
+
+read age
+
+if [ $age -ge 18 -a $age -le 22 ]
+then 
+        echo "you are eleigibe for house loan"
+
+        if [ $age -ge 18 -a $age -le 20 ]
+        then
+                echo "Car loan also available"
+        else
+                echo "car loan not available"
+        fi
+else
+        echo "you are not eligible for house loan"
+fi
+
+
+OUTPUT
+
+enter your age
+20
+you are eleigibe for house loan
+Car loan also available
+
+enter your age
+26
+you are not eligible for house loan
+
+enter your age
+21
+you are eleigibe for house loan
+car loan not available
+

@@ -1,0 +1,12 @@
+Command 
+
+which python3
+
+which nano
+
+
+OUTPUT
+
+/usr/bin/python3
+
+/usr/bin/nano

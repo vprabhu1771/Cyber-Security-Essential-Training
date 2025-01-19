@@ -1,0 +1,9 @@
+The pwd command allows you to print the current working directory on your terminal. It’s a very basic command and solves its purpose very well.
+
+Command 
+
+pwd
+
+OUTPUT
+
+/home/linux_rig2

@@ -1,0 +1,7 @@
+sudo nano /etc/default/grub
+
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+
+Change To
+
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo OWN LINUX`

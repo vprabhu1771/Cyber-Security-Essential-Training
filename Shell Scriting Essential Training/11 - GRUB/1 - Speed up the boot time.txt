@@ -1,0 +1,8 @@
+sudo nano /etc/default/grub
+
+
+GRUB_TIMEOUT=5
+
+Change To
+
+GRUB_TIMEOUT=0

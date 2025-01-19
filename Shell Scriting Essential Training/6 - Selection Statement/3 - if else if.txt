@@ -1,0 +1,32 @@
+echo "enter any number"
+
+read no
+
+
+if [ $no -gt 0 ]
+then 
+	echo "$no is positive no"
+elif [ $no -lt 0 ]
+then
+	echo "$no is negative no"
+else
+	echo "$no is zero"
+fi
+
+OUTPUT
+
+enter any number
+-5
+-5 is negative no
+
+
+enter any number
+5
+5 is positive no
+
+
+enter any number
+0
+0 is zero
+
+

@@ -1,0 +1,5 @@
+echo "Hello from Prabhu"
+
+echo "Hello from Prabhu" | awk '{print $1}'
+
+echo "Hello from Prabhu" | awk '{print $1, $3}'

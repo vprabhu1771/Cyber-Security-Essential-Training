@@ -1,0 +1,21 @@
+echo "enter your age"
+
+read age
+
+if [ $age -ge 18 ]
+then 
+        echo "Congrats You are eligible for voting"
+else
+        echo "Sorry You are not eligible for voting"
+fi
+
+OUTPUT
+
+enter your age
+20
+Congrats You are eligible for voting
+
+
+enter your age
+10
+Sorry You are not eligible for voting

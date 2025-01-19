@@ -1,0 +1,21 @@
+To gather information about file system partitions, you can use the fdisk command. Although the main functionality of the fdisk command is to modify file system partitions, it can also be used to view information about the different partitions on your file system.
+
+You can print partition information as follows. Remember to run the command as a superuser or else you may not see any output.
+
+sudo fdisk -l
+
+WARNING: GPT (GUID Partition Table) detected on '/dev/sda'! 
+The util fdisk doesn't support GPT. Use GNU Parted.
+
+
+Disk /dev/sda: 1000.2 GB, 1000204886016 bytes
+255 heads, 63 sectors/track, 121601 cylinders, 
+total 1953525168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disk identifier: 0xcee8ad92
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sda1               1  1953525167   976762583+  ee  GPT
+Partition 1 does not start on physical sector boundary.

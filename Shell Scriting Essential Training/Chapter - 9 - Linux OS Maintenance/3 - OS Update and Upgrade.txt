@@ -1,0 +1,14 @@
+Update Your Package (Software)
+
+sudo apt update
+
+
+Upgrade Your OS (Operating System)
+
+
+sudo apt upgrade
+
+
+Update Your Package (Software) And Upgrade Your OS (Operating System)
+
+sudo apt update && upgrade

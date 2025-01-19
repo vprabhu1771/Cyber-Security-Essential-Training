@@ -1,0 +1,20 @@
+count=1
+while [ $count -le 5 ]
+do
+
+  echo $count
+  count=$(( $count + 1 ))
+
+  if [ $count -eq 2 ]
+  then
+    continue
+  fi
+done
+
+
+OUTPUT
+1
+2
+3
+4
+5

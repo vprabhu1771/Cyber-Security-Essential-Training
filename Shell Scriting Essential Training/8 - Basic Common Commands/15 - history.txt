@@ -1,0 +1,27 @@
+history command is used to view the previously executed command. This feature was not available in the Bourne shell. Bash and Korn support this feature in which every command executed is treated as the event and is associated with an event number using which they can be recalled and changed if required.
+
+Command
+
+history 
+
+
+OUTPUT
+
+1  whoami
+2  which python3
+3  which nano
+4  cat hell.sh
+5  cat hello.sh
+6  uname
+7  help
+
+
+To clear the history,
+
+Command
+
+history -c
+
+or
+
+rm ~/.bash_history

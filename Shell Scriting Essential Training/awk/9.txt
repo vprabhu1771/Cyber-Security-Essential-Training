@@ -1,0 +1,3 @@
+awk '{print $NF}' data.txt
+
+cat data.txt

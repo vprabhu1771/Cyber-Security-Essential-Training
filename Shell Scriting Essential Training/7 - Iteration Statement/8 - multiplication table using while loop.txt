@@ -1,0 +1,16 @@
+count=1
+table_no=2
+while [ $count -le 5 ]
+do
+  echo "$count * $table_no = $(( count * table_no ))"
+  count=$(( $count + 1 ))
+done
+
+OUTPUT
+
+1 * 2 = 2
+2 * 2 = 4
+3 * 2 = 6
+4 * 2 = 8
+5 * 2 = 10
+

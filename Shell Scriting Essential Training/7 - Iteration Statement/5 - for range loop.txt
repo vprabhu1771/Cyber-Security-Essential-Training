@@ -1,0 +1,12 @@
+for element in 1 2 3 4 5
+do
+  echo $element
+done
+
+
+OUTPUT
+1
+2
+3
+4
+5

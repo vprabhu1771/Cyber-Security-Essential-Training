@@ -1,0 +1,7 @@
+echo "Hello"
+
+echo "World"
+
+OUTPUT
+Hello
+World

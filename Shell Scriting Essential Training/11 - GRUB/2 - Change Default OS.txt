@@ -1,0 +1,12 @@
+sudo nano /etc/default/grub
+
+0 -> Debain
+
+1 -> Windows
+
+
+GRUB_DEFAULT=0
+
+Change To
+
+GRUB_DEFAULT=1

@@ -1,0 +1,13 @@
+echo "Enter your name"
+
+read name
+
+echo "your name is $name"
+
+
+OUTPUT
+
+Enter your name
+prabhu
+
+your name is prabhu

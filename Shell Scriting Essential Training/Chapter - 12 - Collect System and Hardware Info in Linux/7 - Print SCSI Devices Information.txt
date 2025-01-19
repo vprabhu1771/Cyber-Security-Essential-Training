@@ -1,0 +1,33 @@
+To view all your scsi/sata devices, use the lsscsi command as follows. If you do not have the lsscsi tool installed, run the following command to install it.
+
+[on Debian derivatives]
+
+sudo apt-get install lsscsi
+
+
+[On RedHat based systems]
+
+yum install lsscsi
+
+
+[On Fedora 21+ Onwards]
+
+dnf install lsscsi
+
+
+After installation, run the lsscsi command as shown:
+
+lsscsi
+
+[0:0:0:0]    disk    ATA      ST1000LM024 HN-M 2BA3  /dev/sda 
+[1:0:0:0]    cd/dvd  PLDS     DVD-RW DA8A5SH   RL61  /dev/sr0 
+[4:0:0:0]    disk    Generic- xD/SD/M.S.       1.00  /dev/sdb
+
+Use the -s option to show device sizes.
+
+lsscsi -s
+
+[0:0:0:0]    disk    ATA      ST1000LM024 HN-M 2BA3  /dev/sda   1.00TB
+[1:0:0:0]    cd/dvd  PLDS     DVD-RW DA8A5SH   RL61  /dev/sr0        -
+[4:0:0:0]    disk    Generic- xD/SD/M.S.       1.00  /dev/sdb        -
+

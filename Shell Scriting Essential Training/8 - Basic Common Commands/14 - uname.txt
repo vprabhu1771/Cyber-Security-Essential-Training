@@ -1,0 +1,11 @@
+The uname and whoami commands allow you to know some basic information which comes really handy when you work on multiple systems. In general, if you’re working with a single computer, you won’t really need it as often as someone who is a network administrator.
+
+Command
+
+uname
+
+or
+
+Command
+
+uname -a

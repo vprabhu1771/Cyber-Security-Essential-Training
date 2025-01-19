@@ -1,0 +1,16 @@
+table_no=2
+
+for element in 1 2 3 4 5
+do
+  echo "$element * $table_no = $(( element * table_no ))"
+done
+
+
+OUTPUT
+
+1 * 2 = 2
+2 * 2 = 4
+3 * 2 = 6
+4 * 2 = 8
+5 * 2 = 10
+
