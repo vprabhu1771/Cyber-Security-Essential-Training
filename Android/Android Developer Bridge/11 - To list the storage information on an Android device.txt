@@ -1,0 +1,28 @@
+To list the storage information on an Android device using ADB and a Python script, you can use the following example:
+
+1. Ensure your Android device is connected via USB and debugging mode is enabled.
+
+2. Create a Python script with the following code:
+
+```python
+import subprocess
+
+# Define the ADB command to get storage information
+adb_storage_command = ['adb', 'shell', 'df']
+
+try:
+    # Get storage information from the connected Android device
+    result = subprocess.run(adb_storage_command, capture_output=True, text=True, check=True)
+    storage_output = result.stdout
+    print(storage_output)
+except subprocess.CalledProcessError as e:
+    print(f"Error: {e}")
+```
+
+3. Run the Python script. It will send the ADB command to retrieve storage information from the connected Android device.
+
+The script uses the `df` command through ADB to display the disk space usage for different partitions on the device.
+
+Please note that the output of the `df` command might vary depending on the Android device and version. The script above captures and prints the output as-is. If you want to parse and display specific storage information, you may need to modify the script accordingly.
+
+Always be cautious when interacting with your device via ADB and ensure you have proper permissions and knowledge before making any changes.

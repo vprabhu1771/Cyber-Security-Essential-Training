@@ -1,0 +1,20 @@
+To access the Android Debug Bridge (ADB) using a Python script, you can use the `subprocess` module to execute ADB commands. Here's a simple example of how you might achieve this:
+
+```python
+import subprocess
+
+# Define your ADB command
+adb_command = ['adb', 'devices']
+
+# Execute the ADB command using subprocess
+try:
+    result = subprocess.run(adb_command, capture_output=True, text=True, check=True)
+    output = result.stdout
+    print(output)
+except subprocess.CalledProcessError as e:
+    print(f"Error executing ADB command: {e}")
+```
+
+Make sure you have the ADB executable (usually named `adb`) in your system's PATH, or you can provide the full path to it in the `adb_command` list. The above example demonstrates listing connected devices using the `adb devices` command. You can modify the `adb_command` list to execute other ADB commands as needed.
+
+Remember to have the necessary permissions and dependencies installed on your system to use ADB. This code is just a basic starting point, and you can expand upon it to suit your specific needs.

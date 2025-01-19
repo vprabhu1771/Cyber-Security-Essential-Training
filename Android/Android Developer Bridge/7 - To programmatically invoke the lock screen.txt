@@ -1,0 +1,27 @@
+To programmatically invoke the lock screen on an Android device using Python and ADB, you can use the following example:
+
+1. Ensure your Android device is connected via USB and debugging mode is enabled.
+
+2. Create a Python script with the following code:
+
+```python
+import subprocess
+
+# Define the ADB command to invoke the lock screen
+adb_lock_screen_command = ['adb', 'shell', 'input', 'keyevent', '26']
+
+try:
+    # Invoke the lock screen on the connected Android device
+    subprocess.run(adb_lock_screen_command, check=True)
+    print("Lock screen invoked.")
+except subprocess.CalledProcessError as e:
+    print(f"Error: {e}")
+```
+
+3. Run the Python script. It will send the ADB command to invoke the lock screen on the connected Android device.
+
+The script uses the `input keyevent` command through ADB with the keycode `26`, which represents the power button event. This simulates the action of pressing the power button to lock the device.
+
+Please note that the behavior of the lock screen and the availability of this action may vary depending on the Android device and version. Additionally, locking the device in this manner might not provide the same level of security as locking it through the system's built-in mechanisms.
+
+As always, exercise caution when interacting with your device via ADB and ensure you have proper permissions and knowledge before making any changes.

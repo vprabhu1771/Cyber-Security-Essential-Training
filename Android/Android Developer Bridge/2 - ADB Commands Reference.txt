@@ -1,0 +1,26 @@
+Certainly! Here's a list of some commonly used ADB (Android Debug Bridge) commands for managing and interacting with Android devices connected to your computer. Please note that some of these commands may require developer mode and USB debugging to be enabled on your Android device.
+
+1. **adb devices**: List all connected devices with their unique identifiers.
+2. **adb shell**: Open a remote shell on the device, allowing you to execute commands directly.
+3. **adb reboot**: Reboot the device.
+4. **adb reboot bootloader**: Reboot the device into bootloader/fastboot mode.
+5. **adb reboot recovery**: Reboot the device into recovery mode.
+6. **adb install <path-to-apk>**: Install an APK file onto the device.
+7. **adb uninstall <package-name>**: Uninstall an app from the device.
+8. **adb pull <remote> <local>**: Copy a file from the device to your computer.
+9. **adb push <local> <remote>**: Copy a file from your computer to the device.
+10. **adb logcat**: Show the device's log messages.
+11. **adb shell pm list packages**: List all installed packages on the device.
+12. **adb shell dumpsys**: Dump system information and diagnostic data.
+13. **adb shell screencap <file>**: Capture a screenshot from the device.
+14. **adb shell screenrecord <file>**: Record the device screen and save it to a file.
+15. **adb shell am start -n <package-name>/<activity-name>**: Start a specific app activity.
+16. **adb forward <local> <remote>**: Forward a port from the device to your computer.
+17. **adb reverse <remote> <local>**: Reverse port forwarding.
+18. **adb backup -f <file> <package-name>**: Create a backup of an app.
+19. **adb restore <file>**: Restore an app backup to the device.
+20. **adb sideload <zip-file>**: Sideload an OTA update or custom ROM onto the device.
+
+Remember to replace `<path-to-apk>`, `<package-name>`, `<remote>`, `<local>`, `<activity-name>`, and `<zip-file>` with the appropriate values for your situation.
+
+Always exercise caution when using ADB commands, as some commands can potentially modify or delete important data on your device. Make sure you understand the commands you're using and their potential consequences.

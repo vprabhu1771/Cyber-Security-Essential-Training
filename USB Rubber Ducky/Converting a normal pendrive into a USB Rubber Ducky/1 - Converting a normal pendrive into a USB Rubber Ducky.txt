@@ -1,0 +1,13 @@
+Converting a normal pendrive into a USB Rubber Ducky involves reprogramming the pendrive's firmware to emulate a keyboard and execute preconfigured scripts. This is a complex process and requires technical expertise. Here are the general steps involved:
+
+    Purchase a compatible USB flash drive: Not all flash drives are compatible with the USB Rubber Ducky firmware. Before purchasing a flash drive, check the compatibility list on the Hak5 website.
+
+    Download the USB Rubber Ducky firmware: The firmware is available on the Hak5 website. You will need to download the firmware that is compatible with your operating system.
+
+    Flash the firmware onto the USB drive: Follow the instructions provided with the firmware to flash it onto the USB drive. This will involve using a tool to write the firmware to the drive.
+
+    Create scripts: You will need to create or obtain scripts that you want the USB Rubber Ducky to execute. These scripts will contain keystrokes that will be emulated by the USB Rubber Ducky when it is inserted into a computer.
+
+    Test the USB Rubber Ducky: Insert the USB Rubber Ducky into a computer and test the scripts to ensure that they are working correctly.
+
+Please note that while it is possible to convert a normal pendrive into a USB Rubber Ducky, it is not a recommended practice as it may involve violating the warranty of the pendrive and may not work properly. It is recommended that you purchase a dedicated USB Rubber Ducky device from a reputable vendor.

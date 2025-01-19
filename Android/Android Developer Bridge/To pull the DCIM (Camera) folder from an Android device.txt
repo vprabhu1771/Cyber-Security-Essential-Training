@@ -1,0 +1,38 @@
+To pull the DCIM (Camera) folder from an Android device to your PC's desktop using ADB and a Python script, you can follow these steps:
+
+1. Ensure your Android device is connected via USB and debugging mode is enabled.
+
+2. Create a Python script with the following code:
+
+```python
+import subprocess
+import os
+import shutil
+
+# Define the ADB command to pull the DCIM folder from the device
+adb_pull_dcim_command = ['adb', 'pull', '/sdcard/DCIM', 'output_folder_path']
+
+try:
+    # Create the output folder if it doesn't exist
+    output_folder = 'output_folder_path'
+    os.makedirs(output_folder, exist_ok=True)
+
+    # Pull the DCIM folder from the device to your PC
+    subprocess.run(adb_pull_dcim_command, check=True)
+
+    # Move the DCIM folder to the PC desktop
+    dcim_path = os.path.join(output_folder, 'DCIM')
+    desktop_path = os.path.expanduser("~/Desktop/DCIM")
+    shutil.move(dcim_path, desktop_path)
+
+    print("DCIM folder pulled to desktop.")
+
+except subprocess.CalledProcessError as e:
+    print(f"Error: {e}")
+```
+
+Replace `'output_folder_path'` with the actual path where you want to save the DCIM folder temporarily on your PC before moving it to the desktop.
+
+3. Run the Python script. It will pull the DCIM folder from the connected Android device to the specified folder on your PC and then move it to your desktop.
+
+Please note that the path `/sdcard/DCIM` assumes that the DCIM folder is located in the root of the device's internal storage. If the DCIM folder is in a different location, you'll need to adjust the path accordingly. Additionally, make sure you have the necessary permissions on your Android device to access the DCIM folder and that your device is connected via USB with debugging mode enabled.

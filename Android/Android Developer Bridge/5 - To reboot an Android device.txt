@@ -1,0 +1,19 @@
+Certainly! Here's an example of how you can use Python and ADB to reboot an Android device:
+
+```python
+import subprocess
+
+# Define the ADB command to reboot the device
+adb_reboot_command = ['adb', 'reboot']
+
+try:
+    # Reboot the connected Android device
+    subprocess.run(adb_reboot_command, check=True)
+    print("Device is rebooting...")
+except subprocess.CalledProcessError as e:
+    print(f"Error: {e}")
+```
+
+This script sends the ADB command to reboot the connected Android device. When you run this script, the device will initiate a reboot. Make sure your device is connected via USB and debugging mode is enabled.
+
+As always, be cautious when rebooting devices remotely, and ensure you have proper permissions to perform such actions on the device.

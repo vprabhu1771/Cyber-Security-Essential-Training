@@ -1,0 +1,11 @@
+aircrack-ng -u
+
+Vendor          = Intel
+Model           = 11th Gen Intel(R) Core(TM) i7-11700K @ 3.60GHz
+Features        = MMX,SSE,SSE2,SSE3,SSSE3,SSE4.1,SSE4.2,AES-NI,AVX,AVX2,AVX512F
+Hyper-Threading = Yes
+Logical CPUs    = 16
+Threads per core= 2
+CPU cores       = 8
+SIMD size       = 16 (512 bit)
+SIMD size in use= 8 (256 bit)

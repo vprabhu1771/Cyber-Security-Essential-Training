@@ -1,0 +1,36 @@
+To copy the DCIM folder (containing camera photos and videos) from an Android device to your desktop using ADB and a Python script, you can follow these steps:
+
+1. Ensure your Android device is connected via USB and debugging mode is enabled.
+
+2. Create a Python script with the following code:
+
+```python
+import subprocess
+import os
+import shutil
+
+# Define the source and destination paths
+source_folder = '/sdcard/DCIM'
+destination_folder = os.path.expanduser('~/Desktop/DCIM')
+
+# Define the ADB command to copy the DCIM folder to a temporary location
+adb_copy_command = ['adb', 'pull', source_folder, destination_folder]
+
+try:
+    # Create the destination folder on your desktop if it doesn't exist
+    os.makedirs(destination_folder, exist_ok=True)
+
+    # Copy the DCIM folder from the connected Android device to your desktop
+    subprocess.run(adb_copy_command, check=True)
+    print("DCIM folder copied to desktop.")
+except subprocess.CalledProcessError as e:
+    print(f"Error: {e}")
+```
+
+3. Run the Python script. It will send the ADB command to copy the DCIM folder from the connected Android device to your desktop.
+
+The script uses the `adb pull` command to copy the entire DCIM folder to the specified destination folder on your desktop.
+
+Please note that the paths and folder names may vary depending on your device's configuration. Additionally, copying large amounts of data might take some time, so please be patient.
+
+As always, exercise caution when interacting with your device via ADB and ensure you have proper permissions and knowledge before making any changes.

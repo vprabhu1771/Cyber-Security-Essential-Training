@@ -1,0 +1,9 @@
+https://stackoverflow.com/questions/20564514/adb-is-not-recognized-as-an-internal-or-external-command-operable-program-or
+
+
+
+In Windows 10,
+
+    Add User Variable PATH: %USERPROFILE%\AppData\Local\Android\sdk\platform-tools.
+    Restart cmd (if any open).
+    adb devices, it should list, if it does, you are all set.

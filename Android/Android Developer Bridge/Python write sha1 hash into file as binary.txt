@@ -1,0 +1,18 @@
+Certainly! Here's an example of how you can calculate the SHA-1 hash of a string and then write the hash value into a file as binary data:
+
+```python
+import hashlib
+
+# Input string
+input_string = "Hello, world!"
+
+# Calculate SHA-1 hash
+hash_object = hashlib.sha1(input_string.encode())
+sha1_hash = hash_object.digest()
+
+# Write hash to a file as binary
+with open('hash.bin', 'wb') as file:
+    file.write(sha1_hash)
+```
+
+In this example, the `hashlib` library is used to calculate the SHA-1 hash of the input string `"Hello, world!"`. The `.digest()` method returns the hash value as bytes, which is then written to a file named `'hash.bin'` in binary mode (`'wb'`). Make sure to replace `'hash.bin'` with the desired filename and path.

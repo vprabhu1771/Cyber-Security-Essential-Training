@@ -1,0 +1,4 @@
+> adb devices -l
+
+List of devices attached
+123abc12               device product:<id> model:<id> device:<id> transport_id:<id>

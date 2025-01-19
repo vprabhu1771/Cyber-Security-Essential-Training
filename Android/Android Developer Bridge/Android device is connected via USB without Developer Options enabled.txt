@@ -1,0 +1,9 @@
+When an Android device is connected via USB without Developer Options enabled, you typically have limited options. Some of the available actions include:
+
+1. Charging: The device can charge via the USB connection.
+2. File Transfer (MTP): You can transfer files between your computer and the device.
+3. USB Tethering: Share your device's mobile data connection with your computer.
+4. PTP (Picture Transfer Protocol): Import photos from your device to your computer.
+5. MIDI (Musical Instrument Digital Interface): Connect MIDI devices to your Android device for music-related purposes.
+
+However, for more advanced system-level actions or debugging, enabling Developer Options is necessary. If you require additional functionalities, you'll need to enable Developer Options on the Android device.

@@ -1,0 +1,25 @@
+To reboot an Android device into recovery mode using ADB and a Python script, you can follow these steps:
+
+1. Ensure your Android device is connected via USB and debugging mode is enabled.
+
+2. Create a Python script with the following code:
+
+```python
+import subprocess
+
+# Define the ADB command to reboot the device into recovery mode
+adb_recovery_command = ['adb', 'reboot', 'recovery']
+
+try:
+    # Reboot the connected Android device into recovery mode
+    subprocess.run(adb_recovery_command, check=True)
+    print("Device is rebooting into recovery mode...")
+except subprocess.CalledProcessError as e:
+    print(f"Error: {e}")
+```
+
+3. Run the Python script. It will send the ADB command to reboot the connected Android device into recovery mode.
+
+Remember that the ability to reboot into recovery mode might depend on the specific device and its manufacturer. Some devices might require additional steps or key combinations to enter recovery mode. Make sure to research the appropriate method for your specific device if the above script doesn't work as expected.
+
+As always, exercise caution when performing actions like this, and ensure you have proper permissions and knowledge about your device before attempting any changes.

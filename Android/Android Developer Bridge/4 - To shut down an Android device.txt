@@ -1,0 +1,19 @@
+To shut down an Android device using ADB and a Python script, you can follow a similar approach as before. Here's an example:
+
+```python
+import subprocess
+
+# Define the ADB command to shut down the device
+adb_shutdown_command = ['adb', 'shell', 'su', '-c', 'reboot -p']
+
+try:
+    # Shut down the connected Android device
+    subprocess.run(adb_shutdown_command, check=True)
+    print("Device is shutting down...")
+except subprocess.CalledProcessError as e:
+    print(f"Error: {e}")
+```
+
+This script sends the ADB command to shut down the connected Android device. It uses the `reboot -p` command with superuser privileges to perform the shutdown.
+
+Please note that the ability to shut down the device might require root access, and using root privileges can potentially be risky. Make sure you understand the implications and have proper permissions before attempting this. Also, ensure your device is connected via USB and debugging mode is enabled.

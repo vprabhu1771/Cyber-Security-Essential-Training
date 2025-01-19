@@ -1,0 +1,18 @@
+It seems like you want to create a SHA-1 hash of the string "1234" and then save it to a file named "gesture.key". However, it's important to note that SHA-1 is considered cryptographically broken and unsuitable for further use due to vulnerabilities that have been discovered. It's recommended to use a more secure hashing algorithm, such as SHA-256 or SHA-3, for any security-related tasks.
+
+Here's an example of how you can create a SHA-256 hash and save it to a file:
+
+```python
+import hashlib
+
+data = hashlib.sha1()
+
+data.update(b"1234")
+
+hash_value = data.hexdigest()
+
+with open("gesture.key", "w") as file:
+    file.write(hash_value)
+```
+
+Please remember that this example is for educational purposes. In a real-world scenario, you should use a stronger hash algorithm and consider additional security measures.

@@ -1,0 +1,15 @@
+import hashlib
+
+data = hashlib.sha1()
+
+data.update(b"1234")
+
+print(data.digest())
+
+print(data.hexdigest())
+
+OUTPUT
+
+b'q\x10\xed\xa4\xd0\x9e\x06*\xa5\xe4\xa3\x90\xb0\xa5r\xac\r,\x02 '
+
+'7110eda4d09e062aa5e4a390b0a572ac0d2c0220'
