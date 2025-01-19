@@ -1,0 +1,12 @@
+adb shell input keyevent KEYCODE_VOLUME_UP
+
+or
+
+input keyevent KEYCODE_VOLUME_UP
+
+
+adb shell input keyevent 24
+
+or
+
+input keyevent 24

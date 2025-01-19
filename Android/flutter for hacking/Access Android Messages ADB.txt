@@ -1,0 +1,53 @@
+To access Android messages via ADB (Android Debug Bridge), you can use the following steps:
+
+### 1. **Set Up ADB:**
+   - Ensure you have ADB installed on your computer. You can download it as part of the Android SDK platform tools from [here](https://developer.android.com/studio/releases/platform-tools).
+   - Enable Developer Options and USB Debugging on your Android device.
+   - Connect your Android device to your computer via USB.
+
+### 2. **Check ADB Connection:**
+   - Open a terminal or command prompt and type the following command to verify that your device is connected:
+     ```bash
+     adb devices
+     ```
+   - This should list your device with its serial number.
+
+### 3. **Access SMS Database:**
+   Android stores SMS messages in a database located at `/data/data/com.android.providers.telephony/databases/mmssms.db`. To access it, use the following command:
+
+   ```bash
+   adb shell
+   su
+   cp /data/data/com.android.providers.telephony/databases/mmssms.db /sdcard/
+   exit
+   adb pull /sdcard/mmssms.db
+   ```
+
+   This sequence of commands:
+   - Enters the Android shell.
+   - Switches to superuser (root) mode.
+   - Copies the `mmssms.db` file to the SD card.
+   - Exits the shell.
+   - Pulls the `mmssms.db` file from the SD card to your computer.
+
+### 4. **View SMS Database:**
+   The `mmssms.db` is a SQLite database. You can open it using any SQLite viewer or database management tool, such as DB Browser for SQLite.
+
+### 5. **Query SMS Data:**
+   If you prefer to view the messages directly via ADB without pulling the database, you can run SQL queries on the `mmssms.db` using ADB shell:
+
+   ```bash
+   adb shell
+   su
+   sqlite3 /data/data/com.android.providers.telephony/databases/mmssms.db
+   .tables
+   SELECT * FROM sms;
+   ```
+
+   This will show you all the messages stored on your device.
+
+### **Important Notes:**
+   - Accessing the SMS database usually requires root access. If your device isn't rooted, these commands might not work.
+   - Be cautious when handling sensitive data and ensure that you comply with privacy laws and regulations.
+
+This method allows you to access and view your SMS messages directly from an Android device via ADB.

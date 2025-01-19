@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/14772619/wake-up-android-with-use-adb-or-eclipse-just-before-debug
+
+https://stackoverflow.com/questions/29072501/how-to-unlock-android-phone-through-adb

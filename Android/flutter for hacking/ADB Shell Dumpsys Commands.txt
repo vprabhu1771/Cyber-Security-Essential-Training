@@ -1,0 +1,63 @@
+The `adb shell dumpsys` command is used to obtain information about various system services on an Android device. Here is a list of some common `adb shell dumpsys` commands you can use to gather specific information:
+
+### Common `adb shell dumpsys` Commands:
+1. **General System Information:**
+   - `adb shell dumpsys` - Displays information about all system services.
+   - `adb shell dumpsys -l` - Lists all available services that you can pass to `dumpsys`.
+   - `adb shell dumpsys -t [time-in-seconds]` - Dumps system information with a time limit.
+
+2. **Battery:**
+   - `adb shell dumpsys battery` - Shows battery status, including current charge level, voltage, temperature, etc.
+
+3. **Power:**
+   - `adb shell dumpsys power` - Displays information about power management, such as whether the screen is on, sleep mode, etc.
+
+4. **Window Manager:**
+   - `adb shell dumpsys window` - Provides information on windows, their states, activities, and configurations.
+
+5. **Activity Manager:**
+   - `adb shell dumpsys activity` - Gives detailed information about activities, running processes, memory usage, etc.
+   - `adb shell dumpsys activity activities` - Lists all activities.
+   - `adb shell dumpsys activity recents` - Shows the recent activity stack.
+
+6. **Package Manager:**
+   - `adb shell dumpsys package` - Displays information about installed packages, including permissions, activities, services, etc.
+   - `adb shell dumpsys package [package-name]` - Specific information about a particular package.
+
+7. **Network:**
+   - `adb shell dumpsys netstats` - Provides network statistics, including data usage per app.
+   - `adb shell dumpsys connectivity` - Shows the status of network connections and interfaces.
+
+8. **Wi-Fi:**
+   - `adb shell dumpsys wifi` - Dumps information about the Wi-Fi service, including connected networks, state, etc.
+
+9. **Input:**
+   - `adb shell dumpsys input` - Displays information about input devices and input dispatch.
+
+10. **Memory:**
+    - `adb shell dumpsys meminfo` - Shows memory usage details for processes.
+
+11. **Audio:**
+    - `adb shell dumpsys audio` - Provides information about the audio subsystem, including current settings and states.
+
+12. **Display:**
+    - `adb shell dumpsys display` - Information about display configurations and connected displays.
+
+13. **Sensor:**
+    - `adb shell dumpsys sensorservice` - Dumps information related to sensor services.
+
+14. **Notification:**
+    - `adb shell dumpsys notification` - Information about notifications, including current notifications and notification policies.
+
+15. **Location:**
+    - `adb shell dumpsys location` - Provides details about location services, including providers and current location.
+
+16. **Alarm:**
+    - `adb shell dumpsys alarm` - Shows information about alarm services, including scheduled alarms.
+
+### Examples:
+- `adb shell dumpsys battery` - Get detailed battery information.
+- `adb shell dumpsys window windows` - Get details about all window states.
+- `adb shell dumpsys package com.example.app` - Information specific to `com.example.app` package.
+
+This list is not exhaustive, but it covers some of the most commonly used `dumpsys` commands for debugging and analyzing Android devices.

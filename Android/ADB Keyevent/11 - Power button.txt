@@ -1,0 +1,12 @@
+adb shell input keyevent KEYCODE_POWER
+
+or
+
+input keyevent KEYCODE_POWER
+
+
+adb shell input keyevent 26
+
+or
+
+input keyevent 26

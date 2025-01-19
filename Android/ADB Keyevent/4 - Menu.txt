@@ -1,0 +1,12 @@
+adb shell input keyevent KEYCODE_MENU
+
+OR
+
+input keyevent KEYCODE_MENU
+
+
+adb shell input keyevent 82
+
+OR
+
+input keyevent 82

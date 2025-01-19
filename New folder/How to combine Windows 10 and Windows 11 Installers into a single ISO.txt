@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?v=M3dzLCyxmYM
+
+dism /Get-ImageInfo /ImageFile:H:\sources\install.esd
+
+
+dism /Export-Image /SourceImageFile:H:\sources\install.esd /SourceIndex:1 /DestinationImageFile:D:\Windows10Pro\install.wim /Compress:max /CheckIntegrity

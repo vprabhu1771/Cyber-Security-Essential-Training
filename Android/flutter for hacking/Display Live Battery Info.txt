@@ -1,0 +1,80 @@
+To execute the `adb shell dumpsys battery` command and display the live battery values within a Flutter app, you can use the `process_run` package in combination with the `adb` command. Here's a step-by-step guide to achieving this:
+
+### Step 1: Add `process_run` to Your `pubspec.yaml`
+Add the `process_run` package to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  process_run: ^0.12.2
+```
+
+Run `flutter pub get` to install the package.
+
+### Step 2: Create a Function to Run the `adb` Command
+Create a function in your Flutter app to run the `adb shell dumpsys battery` command and get the battery information.
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:process_run/shell.dart';
+
+class BatteryInfoScreen extends StatefulWidget {
+  @override
+  _BatteryInfoScreenState createState() => _BatteryInfoScreenState();
+}
+
+class _BatteryInfoScreenState extends State<BatteryInfoScreen> {
+  String batteryInfo = "Fetching battery info...";
+
+  @override
+  void initState() {
+    super.initState();
+    fetchBatteryInfo();
+  }
+
+  Future<void> fetchBatteryInfo() async {
+    try {
+      final shell = Shell();
+      var result = await shell.run('adb shell dumpsys battery');
+      setState(() {
+        batteryInfo = result.outText;
+      });
+    } catch (e) {
+      setState(() {
+        batteryInfo = "Failed to fetch battery info: $e";
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Battery Info'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: SingleChildScrollView(
+          child: Text(batteryInfo),
+        ),
+      ),
+    );
+  }
+}
+
+void main() {
+  runApp(MaterialApp(
+    home: BatteryInfoScreen(),
+  ));
+}
+```
+
+### Step 3: Running the App
+When you run the app on a connected device, it will execute the `adb shell dumpsys battery` command and display the result on the screen.
+
+### Notes:
+- Ensure that `adb` is properly set up on your system and that the connected device has USB debugging enabled.
+- This method will only work if the Flutter app is running on a development machine where `adb` is available.
+
+This approach allows you to execute `adb` commands within your Flutter app and display the results, such as live battery information.

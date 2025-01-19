@@ -1,0 +1,12 @@
+adb shell input keyevent KEYCODE_VOLUME_DOWN
+
+or
+
+input keyevent KEYCODE_VOLUME_DOWN
+
+
+adb shell input keyevent 25
+
+or
+
+input keyevent 25

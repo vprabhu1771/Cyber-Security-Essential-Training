@@ -1,0 +1,34 @@
+To shutdown and restart a Linux system, you can use the `shutdown` command with different options. Keep in mind that to execute these commands, you generally need root (administrative) privileges. You can prefix the commands with `sudo` to gain those privileges if you're not already logged in as the root user.
+
+1. **Shutdown:**
+
+   To shut down the system immediately:
+   ```sh
+   sudo shutdown -h now
+   ```
+
+   To shut down the system after a specific amount of time (e.g., 10 minutes):
+   ```sh
+   sudo shutdown -h +10
+   ```
+
+2. **Restart:**
+
+   To restart the system immediately:
+   ```sh
+   sudo shutdown -r now
+   ```
+
+   To restart the system after a specific amount of time:
+   ```sh
+   sudo shutdown -r +10
+   ```
+
+3. **Cancel a scheduled shutdown or restart:**
+
+   If you've scheduled a shutdown or restart and want to cancel it, you can use the `shutdown` command with the `-c` option:
+   ```sh
+   sudo shutdown -c
+   ```
+
+Remember that improper shutdowns can potentially lead to data loss or system instability, so it's generally a good practice to use these commands responsibly and make sure no critical processes or tasks are running before initiating a shutdown or restart.

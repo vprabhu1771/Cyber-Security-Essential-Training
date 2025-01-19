@@ -1,0 +1,12 @@
+adb shell input keyevent KEYCODE_SEARCH
+
+or
+
+input keyevent KEYCODE_SEARCH
+
+
+adb shell input keyevent 84
+
+or
+
+input keyevent 84
