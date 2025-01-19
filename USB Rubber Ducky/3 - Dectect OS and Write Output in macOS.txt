@@ -1,0 +1,17 @@
+To detect the operating system and write the output to a specific text editor on macOS using the USB Rubber Ducky, you can modify the Ducky Script as follows:
+
+For macOS:
+
+DELAY 1000
+GUI SPACE
+DELAY 500
+STRING textedit
+ENTER
+DELAY 1000
+STRING echo "Operating System Information: " > ~/Desktop/os_info.txt && system_profiler SPSoftwareDataType | grep 'System Version' >> ~/Desktop/os_info.txt
+ENTER
+
+
+This script will first wait for 1 second (1000 milliseconds), then simulate pressing the "Command" key and the "Space" key together to open Spotlight search. It will then type "textedit" and press Enter to open TextEdit. Finally, it will run a command that echoes a header message to the text file, and then retrieves the operating system information using the "system_profiler" command and saves the output to a text file named "os_info.txt" on the user's desktop.
+
+Once the script has run, the output will be saved to the specified text editor on the respective operating system.
