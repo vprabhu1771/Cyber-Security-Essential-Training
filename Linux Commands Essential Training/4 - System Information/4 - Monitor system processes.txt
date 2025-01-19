@@ -1,0 +1,31 @@
+top
+
+┌──(kali㉿kali)-[~]
+└─$ top
+
+top - 09:00:45 up 7 min,  1 user,  load average: 0.01, 0.08, 0.05
+Tasks: 200 total,   1 running, 199 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  1.1 sy,  0.0 ni, 97.7 id,  0.1 wa,  0.0 hi,  0.3 si,  0.0 st 
+MiB Mem :   1958.3 total,    262.7 free,    903.2 used,    962.4 buff/cache     
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   1055.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                      
+   2040 kali      20   0  448108 104604  85408 S   3.7   5.2   0:04.07 qterminal                                                                                    
+    966 root      20   0  403072 130884  55984 S   3.3   6.5   0:07.54 Xorg                                                                                         
+   1439 kali      20   0 1323272 107624  79516 S   1.0   5.4   0:02.67 xfwm4                                                                                        
+   1503 kali      20   0  283736  26944  18560 S   0.3   1.3   0:01.64 panel-13-cpugra                                                                              
+   1505 kali      20   0  358136  29784  20692 S   0.3   1.5   0:01.38 panel-15-genmon                                                                              
+   6538 kali      20   0   11704   5248   3200 R   0.3   0.3   0:00.03 top                                                                                          
+      1 root      20   0   21144  12652   9324 S   0.0   0.6   0:00.86 systemd      
+
+The top command provides a real-time, dynamic view of system processes. 
+
+It displays a list of processes and their resource utilization, such as CPU and memory usage. 
+
+To exit top, press q.
+
+htop
+
+Similar to top, htop is an interactive process viewer that provides a more user-friendly and feature-rich interface.
+ 
+It allows you to sort processes, send signals, and manage them easily.

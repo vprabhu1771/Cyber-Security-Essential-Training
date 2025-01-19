@@ -1,0 +1,17 @@
+mv old_file.txt new_name.txt
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mkdir personal         
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mv movies.txt personal 
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ls
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ cd personal 
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop/personal]
+└─$ ls
+movies.txt

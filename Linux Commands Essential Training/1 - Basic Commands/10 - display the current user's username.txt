@@ -1,0 +1,7 @@
+The whoami command in Linux is used to display the username of the currently logged-in user. When you run this command in a terminal, it will simply output your username. For example:
+
+$ whoami
+
+┌──(kali㉿kali)-[~]
+└─$ whoami
+kali

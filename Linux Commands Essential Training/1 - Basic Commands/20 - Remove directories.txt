@@ -1,0 +1,1 @@
+rm -r directory_to_remove

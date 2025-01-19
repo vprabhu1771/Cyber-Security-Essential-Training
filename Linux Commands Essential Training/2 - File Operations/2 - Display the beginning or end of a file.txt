@@ -1,0 +1,16 @@
+head -n 10 file.txt
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ head -n 3 songs.txt
+one 
+two
+three
+
+       
+tail -n 10 file.txt
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ tail -n 3 songs.txt
+eight
+nine
+ten

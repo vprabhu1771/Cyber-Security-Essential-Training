@@ -1,0 +1,21 @@
+df -h
+
+┌──(kali㉿kali)-[~]
+└─$ df -h
+
+Filesystem      Size  Used Avail Use% Mounted on
+udev            940M     0  940M   0% /dev
+tmpfs           196M  1.2M  195M   1% /run
+/dev/sda1        79G   19G   56G  26% /
+tmpfs           980M     0  980M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/loop0       84M   84M     0 100% /snap/scrcpy/399
+/dev/loop2      128K  128K     0 100% /snap/bare/5
+/dev/loop8       13M   13M     0 100% /snap/snap-store/959
+/dev/loop1       92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/loop4       74M   74M     0 100% /snap/core22/864
+/dev/loop5      486M  486M     0 100% /snap/gnome-42-2204/126
+/dev/loop7      497M  497M     0 100% /snap/gnome-42-2204/132
+/dev/loop3       56M   56M     0 100% /snap/core18/2790
+/dev/loop6       41M   41M     0 100% /snap/snapd/20092
+tmpfs           196M  116K  196M   1% /run/user/1000

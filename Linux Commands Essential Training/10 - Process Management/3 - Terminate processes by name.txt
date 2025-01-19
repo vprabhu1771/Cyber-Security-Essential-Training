@@ -1,0 +1,1 @@
+killall process_name

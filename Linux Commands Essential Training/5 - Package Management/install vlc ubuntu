@@ -1,0 +1,54 @@
+To install VLC, Visual Studio Code, and GitHub Desktop on Ubuntu 24.04 LTS, you can follow these steps:
+
+### 1. **Update Your System**
+   First, make sure your system is up to date by running:
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   ```
+
+### 2. **Install VLC**
+   VLC is available in the default Ubuntu repositories, so you can install it with:
+   ```bash
+   sudo apt install vlc -y
+   ```
+
+### 3. **Install Visual Studio Code**
+   To install Visual Studio Code, follow these steps:
+   
+   - Add the Microsoft GPG key and repository:
+     ```bash
+     sudo apt install software-properties-common apt-transport-https wget -y
+     wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+     sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+     ```
+   - Install Visual Studio Code:
+     ```bash
+     sudo apt update
+     sudo apt install code -y
+     ```
+
+### 4. **Install GitHub Desktop**
+   GitHub Desktop isn't officially supported on Linux, but there's a community-driven effort to make it available. You can install it using `shiftkey/desktop` repository:
+   
+   - Download and install the .deb package:
+     ```bash
+     wget https://github.com/shiftkey/desktop/releases/download/release-3.3.0-linux1/GitHubDesktop-linux-3.3.0-linux1.deb
+     sudo apt install ./GitHubDesktop-linux-3.3.0-linux1.deb -y
+     ```
+   
+   - Or, you can add the repository and install it via APT:
+     ```bash
+     sudo apt install software-properties-common apt-transport-https wget -y
+     wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo apt-key add -
+     sudo sh -c 'echo "deb https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/github-desktop.list'
+     sudo apt update
+     sudo apt install github-desktop -y
+     ```
+
+### 5. **Launch Applications**
+   After installation, you can launch these applications from your application menu or by typing their names in the terminal:
+   - VLC: `vlc`
+   - Visual Studio Code: `code`
+   - GitHub Desktop: `github-desktop`
+
+This will set you up with VLC, Visual Studio Code, and GitHub Desktop on your Ubuntu 24.04 LTS system.

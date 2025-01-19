@@ -1,0 +1,28 @@
+To install VLC media player on Ubuntu, you can use the Terminal and the `apt` package manager, which is the default package manager for Ubuntu. Follow these steps:
+
+1. Open a Terminal window. You can do this by pressing `Ctrl` + `Alt` + `T` on your keyboard or by searching for "Terminal" in the application launcher.
+
+2. Update the package list to ensure you have the latest information about available packages. Type the following command and press Enter:
+
+   
+   sudo apt update
+   
+
+   You will need to enter your password to authenticate the installation.
+
+3. After the package list is updated, you can install VLC by running the following command:
+
+   
+   sudo apt install vlc
+   
+
+   Confirm the installation by typing `Y` and then press Enter.
+
+4. The system will now download and install VLC and its dependencies. This process may take a few moments, depending on your internet connection.
+
+5. Once the installation is complete, you can launch VLC by typing `vlc` in the Terminal and pressing Enter. Alternatively, you can search for "VLC" in your application launcher and open it from there.
+
+VLC media player should now be installed on your Ubuntu system and ready to use. You can use it to play various multimedia files, including audio and video.
+
+which vlc
+/usr/bin/vlc

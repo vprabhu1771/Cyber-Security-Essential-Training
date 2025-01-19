@@ -1,0 +1,48 @@
+CentOS, like many other Linux distributions, uses the YUM (Yellowdog Updater Modified) package manager for package management. Here are some common YUM commands for package management on CentOS:
+
+1. Installing a Package:
+   To install a package, use the yum install command followed by the package name:
+
+   
+   sudo yum install packageName
+   
+
+2. Updating Packages:
+   To update all installed packages to their latest versions, use:
+
+   
+   sudo yum update
+   
+
+3. Search for Packages:
+   You can search for packages using:
+
+   
+   yum search packageName
+   
+
+4. Listing Installed Packages:
+   To list all installed packages, you can use:
+
+   
+   yum list installed
+   
+
+5. Removing a Package:
+   To remove a package, use the yum remove command followed by the package name:
+
+   
+   sudo yum remove packageName
+   
+
+6. Listing Available Repositories:
+   To list the available repositories, use:
+
+   
+   yum repolist
+   
+
+7. Adding a New Repository:
+   You can add third-party repositories by creating a .repo file in the /etc/yum.repos.d/ directory.
+
+These are some basic YUM commands for CentOS package management. Remember to run most of these commands with superuser privileges (sudo) to make system-wide changes.

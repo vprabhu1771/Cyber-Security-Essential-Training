@@ -1,0 +1,8 @@
+DISPLAY HOSTNAME
+
+hostname
+
+
+CHANGE HOSTNAME 
+
+hostnamectl set-hostname prabhu

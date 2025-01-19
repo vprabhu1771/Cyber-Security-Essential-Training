@@ -1,0 +1,1 @@
+nc -vz host port

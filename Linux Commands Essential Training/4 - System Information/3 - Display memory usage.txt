@@ -1,0 +1,8 @@
+free -m
+
+┌──(kali㉿kali)-[~]
+└─$ free -m
+
+               total        used        free      shared  buff/cache   available
+Mem:            1958         904         261           7         962        1054
+Swap:           1023           0        1023

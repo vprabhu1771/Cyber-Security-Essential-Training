@@ -1,0 +1,28 @@
+The warning you received indicates that `apt-key` is deprecated, and it suggests managing keyring files using the `/etc/apt/trusted.gpg.d/` directory instead. Here's how to do that for Visual Studio Code:
+
+### 1. **Download the Microsoft GPG Key**
+   First, save the GPG key to a file:
+   ```bash
+   wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+   ```
+
+### 2. **Move the GPG Key to the Trusted Directory**
+   Move the `microsoft.gpg` file to the `/etc/apt/trusted.gpg.d/` directory:
+   ```bash
+   sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+   ```
+
+### 3. **Add the Microsoft Repository**
+   Now, add the Visual Studio Code repository:
+   ```bash
+   sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+   ```
+
+### 4. **Install Visual Studio Code**
+   Finally, update your package list and install Visual Studio Code:
+   ```bash
+   sudo apt update
+   sudo apt install code -y
+   ```
+
+This method will install Visual Studio Code without triggering the `apt-key` deprecation warning.

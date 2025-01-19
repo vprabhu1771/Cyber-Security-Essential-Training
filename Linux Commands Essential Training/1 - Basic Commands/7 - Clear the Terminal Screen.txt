@@ -1,0 +1,6 @@
+ If you want to clear the contents of your terminal screen to get rid of previous commands and output, 
+you can use the clear command. Simply open your terminal and type:
+
+clear
+
+This will clear the terminal and give you a clean slate.

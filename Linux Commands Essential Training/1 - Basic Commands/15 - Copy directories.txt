@@ -1,0 +1,25 @@
+cp -r directory_to_copy/ new_location/
+
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mkdir personal     
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ cp -r entertainment personal 
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ cd personal                 
+
+┌──(kali㉿kali)-[~/Desktop/personal]
+└─$ ls
+entertainment
+
+┌──(kali㉿kali)-[~/Desktop/personal]
+└─$ cd entertainment 
+
+┌──(kali㉿kali)-[~/Desktop/personal/entertainment]
+└─$ ls
+songs.txt
+
+┌──(kali㉿kali)-[~/Desktop/personal/entertainment]
+└─$ 

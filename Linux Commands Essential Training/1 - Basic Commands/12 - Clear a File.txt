@@ -1,0 +1,22 @@
+If you want to clear the contents of a text file, you can use the >, cat /dev/null, or truncate commands to achieve this. For example, if you have a file named "example.txt" and you want to clear it, you can do one of the following:
+
+Using > (redirect):
+
+> example.txt
+
+
+Using cat and /dev/null:
+
+cat /dev/null > example.txt
+
+
+Using truncate:
+
+truncate -s 0 example.txt
+
+
+All of these commands will clear the content of "example.txt" and make it an empty file.
+
+
+┌──(kali㉿kali)-[~]
+└─$ cat /dev/null > /home/kali/Desktop/result.txt

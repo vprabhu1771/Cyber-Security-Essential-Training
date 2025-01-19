@@ -1,0 +1,3 @@
+tar -cvf archive.tar files_to_archive/
+
+tar -xvf archive.tar

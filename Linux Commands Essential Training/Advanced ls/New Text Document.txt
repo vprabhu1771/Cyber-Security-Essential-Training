@@ -1,0 +1,5 @@
+ls -a /home/kali/
+.              .bash_logout      .config    Downloads   .ICEauthority  .mozilla  .profile                   Templates    .xsession-errors
+..             .bashrc           Desktop    .face       .java          .msf4     Public                     Videos       .xsession-errors.old
+.android       .bashrc.original  .dmrc      .face.icon  .john          Music     snap                       .wget-hsts   .zsh_history
+.bash_history  .cache            Documents  .gnupg      .local         Pictures  .sudo_as_admin_successful  .Xauthority  .zshrc

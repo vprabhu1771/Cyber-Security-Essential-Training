@@ -1,0 +1,74 @@
+Emacs is a highly customizable text editor with a vast number of keyboard shortcuts and commands. Below is a list of some commonly used Emacs shortcuts. Keep in mind that Emacs can be extended with various packages, so there may be additional shortcuts specific to those packages.
+
+**Basic Editing:**
+
+1. **File Operations**
+   - C-x C-f: Open a file.
+   - C-x C-s: Save the current file.
+   - C-x C-w: Save as (write to a different file).
+   - C-x C-c: Quit Emacs.
+
+2. **Cut, Copy, and Paste**
+   - C-space: Set the mark (start of the selection).
+   - C-w: Cut (kill) the selected text.
+   - M-w: Copy (kill-ring) the selected text.
+   - C-y: Paste (yank) the text from the kill-ring.
+
+3. **Undo and Redo**
+   - C-/ or C-x u: Undo.
+   - M-/: Redo.
+
+4. **Cursor Movement**
+   - C-f: Move forward one character.
+   - C-b: Move backward one character.
+   - C-n: Move to the next line.
+   - C-p: Move to the previous line.
+   - M-<: Move to the beginning of the buffer.
+   - M->: Move to the end of the buffer.
+
+**Text Manipulation:**
+
+5. **Search and Replace**
+   - C-s: Search forward.
+   - C-r: Search backward.
+   - M-% or C-M-%: Query replace.
+
+6. **Indentation and Formatting**
+   - M-x indent-region: Indent the selected region.
+   - M-x untabify: Convert tabs to spaces.
+   - M-x tabify: Convert spaces to tabs.
+
+**Buffers and Windows:**
+
+7. **Buffer Management**
+   - C-x b: Switch to another buffer.
+   - C-x k: Kill (close) the current buffer.
+   - C-x left/right arrow: Switch to the previous/next buffer.
+
+8. **Window Management**
+   - C-x 2: Split the window vertically.
+   - C-x 3: Split the window horizontally.
+   - C-x 0: Delete the current window.
+   - C-x 1: Delete all other windows and keep the current one.
+   - C-x o: Switch between windows.
+   - C-x 5 2: Open a new frame (window).
+
+**Advanced Editing:**
+
+9. **Macros**
+   - C-x (: Start recording a macro.
+   - C-x ): Stop recording a macro.
+   - C-x e: Execute the last recorded macro.
+
+10. **Marking and Region**
+    - C-SPC: Set the mark.
+    - C-x h: Select the entire buffer (mark whole buffer).
+    - M-x narrow-to-region: Restrict editing to the current region.
+
+11. **Commenting**
+    - M-;: Comment or uncomment the current line or region.
+
+12. **Completion**
+    - M-/ or M-x dabbrev-expand: Expand text using completion.
+
+These are just a subset of the many keyboard shortcuts available in Emacs. Emacs is highly extensible, so you can define your own shortcuts and customize it to suit your needs. You can also install various packages to add additional functionality and shortcuts.

@@ -1,0 +1,6 @@
+Syntax
+pwd
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ pwd                      
+/home/kali/Desktop

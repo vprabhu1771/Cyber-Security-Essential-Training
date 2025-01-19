@@ -1,0 +1,14 @@
+mkdir new_directory
+
+┌──(kali㉿kali)-[~]
+└─$ cd Desktop
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mkdir songs        
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ls
+songs
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ 

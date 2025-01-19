@@ -1,0 +1,23 @@
+sudo apt install neofetch
+
+neofetch
+
+kali@kali 
+--------- 
+OS: Kali GNU/Linux Rolling x86_64 
+Host: VMware Virtual Platform None 
+Kernel: 6.3.0-kali1-amd64 
+Uptime: 4 mins 
+Packages: 2821 (dpkg), 9 (snap) 
+Shell: zsh 5.9 
+Resolution: 1920x984 
+DE: Xfce 4.18 
+WM: Xfwm4 
+WM Theme: Kali-Dark 
+Theme: Kali-Dark [GTK2], adw-gtk3-dark [GTK3] 
+Icons: Flat-Remix-Blue-Dark [GTK2/3] 
+Terminal: qterminal 
+Terminal Font: FiraCode 10 
+CPU: 11th Gen Intel i7-11700K (4) @ 3.600GHz 
+GPU: 00:0f.0 VMware SVGA II Adapter 
+Memory: 756MiB / 1958MiB 

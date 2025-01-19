@@ -1,0 +1,1 @@
+sed 's/old_pattern/new_pattern/' file.txt

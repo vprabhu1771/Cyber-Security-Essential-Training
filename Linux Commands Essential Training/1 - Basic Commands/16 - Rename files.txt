@@ -1,0 +1,13 @@
+mv old_file.txt new_name.txt
+
+┌──(kali㉿kali)-[~]
+└─$ cd Desktop 
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ touch songs.txt
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mousepad songs.txt
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mv songs.txt movies.txt 

@@ -1,0 +1,11 @@
+uname   
+
+┌──(kali㉿kali)-[~]
+└─$ uname   
+Linux
+
+uname -a
+
+┌──(kali㉿kali)-[~]
+└─$ uname -a
+Linux kali 6.3.0-kali1-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.3.7-1kali1 (2023-06-29) x86_64 GNU/Linux

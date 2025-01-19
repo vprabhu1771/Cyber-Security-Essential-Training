@@ -1,0 +1,33 @@
+If you're having trouble copying and pasting between your Ubuntu virtual machine and your host system (the system running VMware), you may need to check and configure a few settings. Here are the steps to troubleshoot this issue:
+
+1. VMware Tools Installation: Ensure that VMware Tools is installed in your Ubuntu virtual machine. VMware Tools enhances the integration between the guest (Ubuntu) and host (your computer) operating systems. It includes features like shared clipboard and automatic screen resizing.
+
+    a. In your Ubuntu virtual machine, open a terminal.
+    
+    b. Run the following command to install VMware Tools:
+    
+    
+    sudo apt-get install open-vm-tools-desktop -y
+    
+    
+    c. Follow the prompts to complete the installation.
+
+2. Restart the Virtual Machine: After installing VMware Tools, restart your Ubuntu virtual machine to ensure the tools are properly integrated.
+
+3. Check VMware Settings:
+
+    a. In VMware, make sure your virtual machine is powered off.
+
+    b. Right-click on the virtual machine in VMware and select "Settings."
+
+    c. In the "Options" tab, select "Guest Isolation."
+
+    d. Ensure that "Enable copy and paste" and "Enable drag and drop" are set to "Always Enabled" or "Enabled until power off or suspend."
+
+4. Restart VMware: Close and restart VMware Workstation or VMware Player after making these changes.
+
+5. Try Copying and Pasting: Start your Ubuntu virtual machine and try copying and pasting text between the guest and host systems. You should be able to copy text from your host system and paste it into the virtual machine and vice versa.
+
+6. Check Host System Clipboard: Sometimes, issues can occur if the host system's clipboard is not functioning correctly. Make sure that you can copy and paste items within your host system to ensure that the host clipboard is working as expected.
+
+If you're still facing issues after following these steps, it's possible that there might be some other system-specific configurations or issues causing the problem. In such cases, consider checking your VMware version, your Ubuntu VM's configuration, or any third-party clipboard managers that might interfere with clipboard functionality.

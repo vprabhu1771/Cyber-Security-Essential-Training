@@ -1,0 +1,31 @@
+mv /old/location/ /new/location/
+
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mkdir entertainment
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ touch songs.txt
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mousepad songs.txt 
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mv songs.txt entertainment 
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mv entertainment/ personal/
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ cd personal     
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop/personal]
+└─$ ls         
+entertainment  movies.txt
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop/personal]
+└─$ cd entertainment 
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop/personal/entertainment]
+└─$ ls
+songs.txt

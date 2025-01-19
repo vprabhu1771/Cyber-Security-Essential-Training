@@ -1,0 +1,6 @@
+which package-name
+
+
+which vlc
+
+/usr/bin/vlc

@@ -1,0 +1,28 @@
+To handle the deprecation of `apt-key` when adding the GitHub Desktop repository, you can follow a similar approach to managing the GPG key directly in the `/etc/apt/trusted.gpg.d/` directory. Here’s how to do it:
+
+### 1. **Download the GitHub Desktop GPG Key**
+   Save the GPG key to a file:
+   ```bash
+   wget -qO- https://packagecloud.io/shiftkey/desktop/gpgkey | gpg --dearmor > shiftkey-desktop.gpg
+   ```
+
+### 2. **Move the GPG Key to the Trusted Directory**
+   Move the `shiftkey-desktop.gpg` file to the `/etc/apt/trusted.gpg.d/` directory:
+   ```bash
+   sudo mv shiftkey-desktop.gpg /etc/apt/trusted.gpg.d/shiftkey-desktop.gpg
+   ```
+
+### 3. **Add the GitHub Desktop Repository**
+   Now, add the GitHub Desktop repository:
+   ```bash
+   sudo sh -c 'echo "deb https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/github-desktop.list'
+   ```
+
+### 4. **Install GitHub Desktop**
+   Update your package list and install GitHub Desktop:
+   ```bash
+   sudo apt update
+   sudo apt install github-desktop -y
+   ```
+
+This approach will allow you to add the GitHub Desktop repository without using the deprecated `apt-key` command.

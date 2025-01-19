@@ -1,0 +1,3 @@
+zip -r archive.zip directory_to_compress/
+
+unzip archive.zip

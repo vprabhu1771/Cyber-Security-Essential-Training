@@ -1,0 +1,7 @@
+rmdir directory_to_remove
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ rmdir songs      
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ls

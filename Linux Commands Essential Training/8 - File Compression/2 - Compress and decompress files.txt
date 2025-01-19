@@ -1,0 +1,3 @@
+gzip file.txt
+
+gunzip file.txt.gz

@@ -1,0 +1,20 @@
+cat file.txt
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ touch songs.txt
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mousepad songs.txt         
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ cat songs.txt
+one 
+two
+three
+four
+five
+six
+seven
+eight
+nine
+ten

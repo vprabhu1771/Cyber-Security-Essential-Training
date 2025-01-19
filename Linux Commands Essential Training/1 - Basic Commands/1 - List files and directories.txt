@@ -1,0 +1,6 @@
+Syntax
+ls
+
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos

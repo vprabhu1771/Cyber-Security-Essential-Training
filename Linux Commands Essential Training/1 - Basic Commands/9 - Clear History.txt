@@ -1,0 +1,13 @@
+rm /home/kali/.bash_history
+
+rm /home/kali/.zsh_history
+
+
+rm ~/.zsh_history 
+
+OR
+
+rm .zsh_history 
+
+
+Make Sure Close and Open Terminal

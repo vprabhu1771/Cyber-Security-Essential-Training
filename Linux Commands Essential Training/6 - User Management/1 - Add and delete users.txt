@@ -1,0 +1,3 @@
+sudo useradd newuser
+
+sudo userdel existinguser

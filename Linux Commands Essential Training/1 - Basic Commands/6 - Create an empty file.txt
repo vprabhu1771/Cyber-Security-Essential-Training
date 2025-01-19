@@ -1,0 +1,7 @@
+touch new_file.txt
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ touch songs.txt  
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ touch app.py

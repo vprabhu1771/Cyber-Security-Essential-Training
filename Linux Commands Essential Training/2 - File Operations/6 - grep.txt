@@ -1,0 +1,33 @@
+hostnamectl
+
+┌──(kali㉿kali)-[~]
+└─$ hostnamectl   
+ Static hostname: kali
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: adae0cb13e174de4b9ed95eb5a24897e
+         Boot ID: c49cfc5cb73847b99d1a973815b6a53f
+  Virtualization: vmware
+Operating System: Kali GNU/Linux Rolling          
+          Kernel: Linux 6.3.0-kali1-amd64
+    Architecture: x86-64
+ Hardware Vendor: VMware, Inc.
+  Hardware Model: VMware Virtual Platform
+Firmware Version: 6.00
+   Firmware Date: Thu 2020-11-12
+    Firmware Age: 2y 10month 2w    
+
+
+hostnamectl | grep Kernel
+
+┌──(kali㉿kali)-[~]
+└─$ hostnamectl | grep Kernel
+          Kernel: Linux 6.3.0-kali1-amd64
+
+hostnamectl | grep -i KERNEL
+
+┌──(kali㉿kali)-[~]
+└─$ hostnamectl | grep -i KERNEL
+          Kernel: Linux 6.3.0-kali1-amd64
+
+

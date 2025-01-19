@@ -1,0 +1,55 @@
+In Fedora, package management is primarily handled using the DNF (Dandified YUM) package manager. Here are some common DNF commands for package management:
+
+1. Installing a Package:
+   
+   sudo dnf install package_name
+   
+
+2. Updating Packages:
+   
+   sudo dnf update
+   
+
+3. Removing a Package:
+   
+   sudo dnf remove package_name
+   
+
+4. Searching for Packages:
+   
+   dnf search search_term
+   
+
+5. Listing Installed Packages:
+   
+   dnf list installed
+   
+
+6. Listing Available Updates:
+   
+   dnf list updates
+   
+
+7. Checking Package Information:
+   
+   dnf info package_name
+   
+
+8. Cleaning Package Cache:
+   
+   sudo dnf clean all
+   
+
+9. Enabling a Repository:
+   
+   sudo dnf config-manager --enable repository_name
+   
+
+10. Disabling a Repository:
+    
+    sudo dnf config-manager --disable repository_name
+    
+
+Remember to replace package_name and repository_name with the actual package or repository you're working with. Additionally, you'll need administrative privileges (sudo) for most package management tasks.
+
+Fedora uses the RPM package format, and DNF resolves dependencies automatically, making package management relatively straightforward.

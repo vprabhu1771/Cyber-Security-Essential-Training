@@ -1,0 +1,3 @@
+cp file_to_copy.txt new_location/
+
+cp -r directory_to_copy/ new_location/

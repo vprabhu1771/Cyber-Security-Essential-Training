@@ -1,0 +1,12 @@
+Syntax
+cd /path/to/directory
+
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ cd Desktop        
+                                                                                                                                                                    
+┌──(kali㉿kali)-[~/Desktop]
+└─$ 

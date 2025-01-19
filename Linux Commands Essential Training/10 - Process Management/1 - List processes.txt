@@ -1,0 +1,5 @@
+ps
+
+OR
+
+ps aux

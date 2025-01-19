@@ -1,0 +1,39 @@
+cp file_to_copy.txt new_location/
+
+
+┌──(kali㉿kali)-[~]
+└─$ cd Desktop
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ touch songs.txt
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ls
+songs.txt
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mousepad songs.txt
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ mkdir entertainment
+
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ls
+entertainment  songs.txt
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ cp songs.txt entertainment/ 
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ cd entertainment            
+
+┌──(kali㉿kali)-[~/Desktop/entertainment]
+└─$ ls
+songs.txt
+
+──(kali㉿kali)-[~/Desktop/entertainment]
+└─$ cd ..           
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ 

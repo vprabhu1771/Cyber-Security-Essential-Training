@@ -1,0 +1,57 @@
+In Red Hat-based Linux distributions like Red Hat Enterprise Linux (RHEL), CentOS, and Fedora, package management is typically handled using the RPM (Red Hat Package Manager) system. Here are some common package management commands:
+
+1. Installing a Package:
+   - To install a package, use the `yum` command (or `dnf` on newer systems):
+     
+     sudo yum install package-name
+     
+
+2. Updating Packages:
+   - To update all installed packages, use:
+     
+     sudo yum update
+     
+
+3. Searching for Packages:
+   - To search for a package, use:
+     
+     yum search keyword
+     
+
+4. Removing Packages:
+   - To remove a package, use:
+     
+     sudo yum remove package-name
+     
+
+5. Listing Installed Packages:
+   - To list all installed packages, use:
+     
+     rpm -qa
+     
+
+6. Querying Package Information:
+   - To get detailed information about a package, use:
+     
+     rpm -qi package-name
+     
+
+7. Installing Local RPM Files:
+   - To install a local RPM file, use:
+     
+     sudo rpm -ivh package-file.rpm
+     
+
+8. Managing Repositories:
+   - Configuration files for repositories are typically found in `/etc/yum.repos.d/`. You can add, enable, or disable repositories by editing these files.
+
+9. Cleaning Package Cache:
+   - To clean the package cache and free up disk space, use:
+     
+     sudo yum clean all
+     
+
+10. Upgrading to a New Release (e.g., RHEL):
+    - For major system upgrades, Red Hat provides specific tools and documentation to guide you through the process. Be sure to consult the official documentation for your specific version.
+
+Please note that Red Hat's package management tools may evolve, so it's a good practice to refer to the official documentation or help commands for the most up-to-date information. Additionally, Red Hat has introduced "dnf" as a replacement for "yum" in some newer distributions, so the exact commands may vary depending on your system version.

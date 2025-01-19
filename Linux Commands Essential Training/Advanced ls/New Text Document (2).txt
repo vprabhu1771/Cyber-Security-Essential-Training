@@ -1,0 +1,11 @@
+ls -l /home/kali/
+total 36
+drwxr-xr-x 5 kali kali 4096 Sep 22 08:12 Desktop
+drwxr-xr-x 2 kali kali 4096 Aug  1 01:32 Documents
+drwxr-xr-x 4 kali kali 4096 Sep 20 02:39 Downloads
+drwxr-xr-x 2 kali kali 4096 Aug  1 01:32 Music
+drwxr-xr-x 2 kali kali 4096 Sep 18 00:49 Pictures
+drwxr-xr-x 2 kali kali 4096 Aug  1 01:32 Public
+drwx------ 3 kali kali 4096 Sep  7 03:26 snap
+drwxr-xr-x 2 kali kali 4096 Aug  1 01:32 Templates
+drwxr-xr-x 2 kali kali 4096 Aug  1 01:32 Videos
