@@ -1,0 +1,3 @@
+hashcat -m0 -a3 -o cracked.txt hash.txt
+
+hashkiller.co.uk

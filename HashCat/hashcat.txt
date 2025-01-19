@@ -1,0 +1,7 @@
+https://hashcat.net/hashcat/
+
+sha1
+hashcat -m 100 -a 0 /Desktop/hash.txt /usr/share/wordlists/rockyou.txt
+
+md5
+hashcat -m 0 -a 0 /Desktop/hash.txt /usr/share/wordlists/rockyou.txt

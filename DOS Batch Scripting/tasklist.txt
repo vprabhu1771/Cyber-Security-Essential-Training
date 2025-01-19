@@ -1,0 +1,15 @@
+command 
+
+tasklist
+
+
+find specfic program
+
+tasklist | findstr firefox
+
+firefox.exe  6952 Console   1   59,184 K
+
+
+kill specific program
+
+taskkill /f /pid 6952

