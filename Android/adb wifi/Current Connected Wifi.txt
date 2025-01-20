@@ -1,0 +1,10 @@
+https://stackoverflow.com/questions/31604610/how-to-test-wifi-connection-via-adb
+
+adb shell dumpsys wifi | grep "current SSID"
+
+current SSID(s):{iface=wlan0,ssid="Mr.Prabhu"}
+
+
+adb shell dumpsys wifi | grep -i ssid
+
+
