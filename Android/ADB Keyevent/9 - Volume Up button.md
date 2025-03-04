@@ -1,12 +1,19 @@
+```
 adb shell input keyevent KEYCODE_VOLUME_UP
+```
 
-or
+# OR
 
+```
 input keyevent KEYCODE_VOLUME_UP
+```
 
-
+```
 adb shell input keyevent 24
+```
 
-or
+# OR
 
+```
 input keyevent 24
+```
