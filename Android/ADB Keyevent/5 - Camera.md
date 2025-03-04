@@ -1,12 +1,19 @@
+```
 adb shell input keyevent KEYCODE_CAMERA
+```
 
-OR
+# OR
 
+```
 input keyevent KEYCODE_CAMERA
+```
 
-
+```
 adb shell input keyevent 27
+```
 
-OR
+# OR
 
+```
 input keyevent 27
+```
