@@ -1,9 +1,15 @@
+```
 adb shell input keyevent KEYCODE_WAKEUP
+```
 
-OR
+# OR
 
+```
 input keyevent KEYCODE_WAKEUP
+```
 
-OR
+# OR
 
+```
 input keyevent 26
+```
