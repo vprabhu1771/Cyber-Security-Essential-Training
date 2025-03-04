@@ -1,12 +1,19 @@
+```
 adb shell input keyevent KEYCODE_SEARCH
+```
 
-or
+# OR
 
+```
 input keyevent KEYCODE_SEARCH
+```
 
-
+```
 adb shell input keyevent 84
+```
 
-or
+# OR
 
+```
 input keyevent 84
+```
