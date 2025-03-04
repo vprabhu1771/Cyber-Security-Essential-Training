@@ -1,5 +1,0 @@
-adb shell input keyevent 4
-
-or
-
-input keyevent 4
