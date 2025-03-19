@@ -1,0 +1,3 @@
+```
+https://www.infosecmatter.com/metasploit-module-library/?mm=post/windows/gather/enum_ms_product_keys
+```
