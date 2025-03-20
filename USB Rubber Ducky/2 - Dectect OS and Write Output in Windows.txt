@@ -5,7 +5,7 @@ For Windows:
 
 DELAY 1000
 GUI r
-STRING notepad
+STRING cmd
 ENTER
 DELAY 1000
 STRING systeminfo | findstr /B /C:"OS Name" /C:"OS Version" > %userprofile%\Desktop\os_info.txt
