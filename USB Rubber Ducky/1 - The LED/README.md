@@ -1,0 +1,39 @@
+## Turn On / Off LED 
+
+![Image](1.jpeg)
+![Image](2.jpeg)
+
+# 3 - Turn on LED - RED
+
+```
+ATTACKMODE HID STORAGE
+
+DELAY 3000
+
+WHILE TRUE
+  IF ($_CAPSLOCK_ON == TRUE) THEN
+    LED_R
+  ELSE IF ($_CAPSLOCK_ON == FALSE) THEN
+    LED_OFF
+  END_IF
+END_WHILE
+```
+
+![Image](4.jpeg)
+![Image](5.jpeg)
+
+# 6 - Turn on LED  - GREEN
+
+```
+ATTACKMODE HID STORAGE
+
+DELAY 3000
+
+WHILE TRUE
+  IF ($_CAPSLOCK_ON == TRUE) THEN
+    LED_G
+  ELSE IF ($_CAPSLOCK_ON == FALSE) THEN
+    LED_OFF
+  END_IF
+END_WHILE
+```
