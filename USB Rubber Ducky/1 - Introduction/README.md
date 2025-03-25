@@ -1,3 +1,5 @@
+# 1 - Programming a USB Rubber Ducky
+
 Programming a USB Rubber Ducky involves writing a script in a scripting language that the device can understand. 
 Here are the basic steps to programming a USB Rubber Ducky
 
