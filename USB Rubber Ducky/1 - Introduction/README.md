@@ -1,26 +1,58 @@
-# 1 - Programming a USB Rubber Ducky
+# USB Rubber Ducky - Programming Guide
 
-Programming a USB Rubber Ducky involves writing a script in a scripting language that the device can understand. 
-Here are the basic steps to programming a USB Rubber Ducky
+## Introduction
+The USB Rubber Ducky is a powerful keystroke injection tool used for penetration testing and automation. This guide provides step-by-step instructions on how to program and deploy a script using the USB Rubber Ducky.
 
-    First, connect your USB Rubber Ducky to your computer using a USB port.
+## Requirements
+- USB Rubber Ducky
+- A computer with a USB port
+- Ducky Script knowledge (basic keystroke commands)
+- Encoder software (Duck Toolkit or Hak5 Encoder)
 
-    Next, you'll need to download the appropriate software for programming the device. 
-    Popular options include the Duck Toolkit or Encoder by Hak5.
+## Steps to Program the USB Rubber Ducky
 
-    Once you have the software installed, you can start writing your script. 
-    The most commonly used scripting language for the USB Rubber Ducky is called Ducky Script, 
-    which is a simple language that uses a series of keystrokes to execute commands. 
-    You can find examples of Ducky Script commands online to help you get started.
+### 1. Connect the USB Rubber Ducky
+Insert your USB Rubber Ducky into an available USB port on your computer.
 
-    Once you've written your script, save it to a text file with a .txt extension.
+### 2. Download and Install the Encoder Software
+Choose and install one of the following tools for encoding Ducky Script:
+- [Duck Toolkit](https://github.com/kevthehermit/DuckToolkit)
+- [Hak5 Encoder](https://github.com/hak5darren/USB-Rubber-Ducky)
 
-    Open the Encoder software and load your script into the tool. Select the appropriate options 
-    for your operating system and choose the language you used to write your script.
+### 3. Write Your Ducky Script
+Create a script using Ducky Script, which consists of keystroke commands to execute desired actions. Example:
+```
+DELAY 1000
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 500
+STRING Hello, USB Rubber Ducky!
+ENTER
+```
+Save the script as `payload.txt`.
 
-    Click the Encode button to generate the payload file. This file is what you will copy onto your USB Rubber Ducky.
+### 4. Encode the Script
+- Open the encoder software.
+- Load `payload.txt` into the tool.
+- Select the appropriate encoding options for your target operating system.
+- Click "Encode" to generate the `inject.bin` payload.
 
-    Finally, copy the payload file to the root directory of your USB Rubber Ducky, safely eject the device, and it's ready to use.
+### 5. Copy the Payload to the USB Rubber Ducky
+- Remove the microSD card from the USB Rubber Ducky.
+- Insert it into a card reader.
+- Copy the `inject.bin` file to the root directory of the microSD card.
+- Eject the card safely and reinsert it into the USB Rubber Ducky.
 
-It's important to note that while the USB Rubber Ducky can be a powerful tool for legitimate security testing purposes, 
-it can also be used for malicious purposes. Always use the device responsibly and with the appropriate authorization.
+### 6. Deploy the USB Rubber Ducky
+- Insert the USB Rubber Ducky into the target computer.
+- The payload will execute automatically.
+
+## Disclaimer
+This tool should only be used for ethical security testing and authorized automation purposes. Unauthorized use may violate laws and policies.
+
+## References
+- [Hak5 Official Documentation](https://docs.hak5.org/)
+- [Ducky Script Reference](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript)
+
