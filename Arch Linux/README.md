@@ -25,12 +25,18 @@ sudo snap install code --classic
 ```
 
 # Docker Install
+```
 sudo pacman -S docker
-
+```
+```
 sudo systemctl start docker.service
-
+```
+```
 sudo systemctl enable docker.service
-
+```
+```
 sudo usermod -aG docker $USER
-
+```
+```
 sudo pacman -S docker-compose
+```
